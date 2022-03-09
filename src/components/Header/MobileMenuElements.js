@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 export const MobileMenuContainer = styled(motion.nav)`
   background: ${(props) => props.theme.colors.whiteLinear};
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;

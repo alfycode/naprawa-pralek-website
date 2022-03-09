@@ -49,7 +49,11 @@ export const Burger = styled.div`
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 
-  transform: translate(${(props) => (props.isOpen === true ? "-50px, 0px" : "0px, 0px;")});
+display: none;
+  transform: translate(
+    ${(props) => (props.isOpen === true ? "-50px, 0px" : "0px, 0px;")}
+  );
+
 
   &:after,
   &:before {
@@ -68,5 +72,9 @@ export const Burger = styled.div`
   &:before {
     transform: translate(${(props) => (props.isOpen === true ? "50px, 0px" : "0px, -10px")})
       rotate(${(props) => (props.isOpen === true ? "-45deg" : "0deg")});
+  }
+  @media screen and (max-width: 768px) {
+    display: block;
+
   }
 `;
