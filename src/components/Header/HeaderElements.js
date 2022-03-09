@@ -15,14 +15,15 @@ export const HeaderContainer = styled.header`
   padding: 0 2em;
   z-index: 999;
   overflow: hidden;
- 
 `;
 export const LogoContainer = styled.div`
-  height: 40px;
-  width: 40px;
-  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 `;
-export const Logo = styled.img``;
+export const LogoType = styled.img`
+  height: 40px;
+`;
 export const NavWrap = styled.ul`
   display: none;
 `;
@@ -44,14 +45,11 @@ export const BurgerContainer = styled.div`
 export const Burger = styled.div`
   width: 38px;
   height: 5px;
-  background-color: ${(props) =>
-    props.isOpen === true ? "transparent" : "#333"};
+  background-color: ${(props) => (props.isOpen === true ? "transparent" : "#333")};
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 
-  transform: translate(
-    ${(props) => (props.isOpen === true ? "-50px, 0px" : "0px, 0px;")}
-  );
+  transform: translate(${(props) => (props.isOpen === true ? "-50px, 0px" : "0px, 0px;")});
 
   &:after,
   &:before {
@@ -64,15 +62,11 @@ export const Burger = styled.div`
     transition: all 0.5s ease-in-out;
   }
   &:after {
-    transform: translate(
-        ${(props) => (props.isOpen === true ? "50px, 0px" : "0px, 10px")}
-      )
+    transform: translate(${(props) => (props.isOpen === true ? "50px, 0px" : "0px, 10px")})
       rotate(${(props) => (props.isOpen === true ? "45deg" : "0deg")});
   }
   &:before {
-    transform: translate(
-        ${(props) => (props.isOpen === true ? "50px, 0px" : "0px, -10px")}
-      )
+    transform: translate(${(props) => (props.isOpen === true ? "50px, 0px" : "0px, -10px")})
       rotate(${(props) => (props.isOpen === true ? "-45deg" : "0deg")});
   }
 `;

@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import {AnimatePresence, motion } from "framer-motion";
+import React, {useState} from "react";
+import {AnimatePresence, motion} from "framer-motion";
+import LogoSrc from "../../img/logoType.svg";
 
 import {
   HeaderContainer,
   LogoContainer,
-  Logo,
+  LogoType as LogoType,
   NavWrap,
   NavContainer,
   NavLink,
@@ -17,10 +18,11 @@ const Header = () => {
   const setIsOpenHandler = () => {
     setisOpen(!isOpen);
   };
+  const redirectToHomePageHandler = () => {};
   return (
     <HeaderContainer>
-      <LogoContainer>
-        <Logo />
+      <LogoContainer onClick={redirectToHomePageHandler}>
+        <LogoType src={LogoSrc} />
       </LogoContainer>
       <NavWrap>
         <NavContainer>
@@ -31,9 +33,7 @@ const Header = () => {
       <BurgerContainer onClick={setIsOpenHandler}>
         <Burger isOpen={isOpen} />
       </BurgerContainer>
-      <AnimatePresence>
-      {isOpen && <MobileMenu setIsOpenHandler={setIsOpenHandler} />}
-      </AnimatePresence>
+      <AnimatePresence>{isOpen && <MobileMenu setIsOpenHandler={setIsOpenHandler} />}</AnimatePresence>
     </HeaderContainer>
   );
 };
