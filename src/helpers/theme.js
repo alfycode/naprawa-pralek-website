@@ -1,23 +1,23 @@
-import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const theme = {
   colors: {
-    dark: '#333',
-    whiteLinear: 'linear-gradient(90deg, #ECE9E6 0%, #FFFFFF 100%)',
-    lightBlue: 'rgba(79, 170, 231, 0.25)',
-    darkBlue: '#4FAAE7',
-    bubbleWhite: 'rgba(255, 255, 255, 0.75)',
-    bubbleBlue: 'rgba(79, 170, 231, 0.75)',
+    dark: "#333",
+    whiteLinear: "linear-gradient(90deg, #ECE9E6 0%, #FFFFFF 100%)",
+    lightBlue: "rgba(79, 170, 231, 0.25)",
+    darkBlue: "#4FAAE7",
+    bubbleWhite: "rgba(255, 255, 255, 0.75)",
+    bubbleBlue: "rgba(79, 170, 231, 0.75)",
   },
-  fonts: ['Poppins', 'sans-serif'],
+  fonts: ["Poppins", "sans-serif"],
   fontSizes: {
-    small: '1em',
-    medium: '2em',
-    large: '3em',
+    small: "1em",
+    medium: "2em",
+    large: "3em",
   },
 };
 export const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
   * {
     box-sizing: border-box;
     margin: 0;
@@ -25,6 +25,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     font-size: 20px;
-    font-family: ${({ theme }) => theme.fonts};
+    font-family: ${({ theme }) => theme.fonts}, sans-serif;
+    src:url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
   }
 `;

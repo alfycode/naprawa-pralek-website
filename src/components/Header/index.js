@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import {AnimatePresence, motion} from "framer-motion";
+import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import LogoSrc from "../../img/logoType.svg";
 import {
   HeaderContainer,
@@ -26,16 +26,16 @@ const Header = () => {
       <LogoContainer onClick={redirectToHomePageHandler}>
         <LogoType src={LogoSrc} />
       </LogoContainer>
-      <NavWrap>
-        <NavContainer>
-          <NavLink>O firmie</NavLink>
-          <NavLink>Usługi</NavLink>
-        </NavContainer>
-      </NavWrap>
+      <NavContainer>
+        <NavLink>O firmie</NavLink>
+        <NavLink>Usługi</NavLink>
+      </NavContainer>
       <BurgerContainer onClick={setIsOpenHandler}>
         <Burger isOpen={isOpen} />
       </BurgerContainer>
-      <AnimatePresence>{isOpen && <MobileMenu setIsOpenHandler={setIsOpenHandler} />}</AnimatePresence>
+      <AnimatePresence>
+        {isOpen && <MobileMenu setIsOpenHandler={setIsOpenHandler} />}
+      </AnimatePresence>
     </HeaderContainer>
   );
 };

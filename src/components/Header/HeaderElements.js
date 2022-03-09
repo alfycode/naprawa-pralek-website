@@ -24,11 +24,30 @@ export const LogoContainer = styled.div`
 export const LogoType = styled.img`
   height: 40px;
 `;
-export const NavWrap = styled.ul`
-  display: none;
+
+export const NavContainer = styled.li`
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  list-style: none;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
-export const NavContainer = styled.li``;
-export const NavLink = styled.a``;
+
+export const NavLink = styled.a`
+  color: ${(props) => props.theme.colors.dark};
+  font-size: ${(props) => props.theme.fontSizes.small};
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+`;
+
 export const BurgerContainer = styled.div`
   position: relative;
   display: flex;
@@ -45,15 +64,15 @@ export const BurgerContainer = styled.div`
 export const Burger = styled.div`
   width: 38px;
   height: 5px;
-  background-color: ${(props) => (props.isOpen === true ? "transparent" : "#333")};
+  background-color: ${(props) =>
+    props.isOpen === true ? "transparent" : "#333"};
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 
-display: none;
+  display: none;
   transform: translate(
     ${(props) => (props.isOpen === true ? "-50px, 0px" : "0px, 0px;")}
   );
-
 
   &:after,
   &:before {
@@ -66,15 +85,18 @@ display: none;
     transition: all 0.5s ease-in-out;
   }
   &:after {
-    transform: translate(${(props) => (props.isOpen === true ? "50px, 0px" : "0px, 10px")})
+    transform: translate(
+        ${(props) => (props.isOpen === true ? "50px, 0px" : "0px, 10px")}
+      )
       rotate(${(props) => (props.isOpen === true ? "45deg" : "0deg")});
   }
   &:before {
-    transform: translate(${(props) => (props.isOpen === true ? "50px, 0px" : "0px, -10px")})
+    transform: translate(
+        ${(props) => (props.isOpen === true ? "50px, 0px" : "0px, -10px")}
+      )
       rotate(${(props) => (props.isOpen === true ? "-45deg" : "0deg")});
   }
   @media screen and (max-width: 768px) {
     display: block;
-
   }
 `;
