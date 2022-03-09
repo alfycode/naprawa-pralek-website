@@ -1,21 +1,22 @@
 import React from "react";
-import { Theme } from "./components/Theme";
-import { Container } from "./components/Container.js";
+import {Theme} from "./components/Theme";
+import {Container} from "./components/Container.js";
 import Header from "./components/Header";
 import Landing from "./pages/Landing";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
-import Contact from "./pages/Contact";
+import {Route, Routes} from "react-router-dom";
 
 const App = () => {
   return (
     <Theme>
       <Container>
         <Header />
-        {/* <Landing />
-        <AboutUs />
-        <Services />
-         */}
+        <Routes>
+          <Route path='/' element={<Landing />}></Route>
+          <Route path='/about' element={<AboutUs />}></Route>
+          <Route path='/services' element={<Services />}></Route>
+        </Routes>
       </Container>
     </Theme>
   );
