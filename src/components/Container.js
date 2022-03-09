@@ -1,8 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  background: ${(props) =>
-    props.color ? props.theme.colors.whiteLinear : '#555'};
+  background: ${(props) => (props.color ? props.theme.colors.whiteLinear : "#555")};
 `;

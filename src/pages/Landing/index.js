@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { BsTelephone } from "react-icons/bs";
-import { BiMap, BiTime } from "react-icons/bi";
+import {BsTelephone} from "react-icons/bs";
+import {BiMap, BiTime} from "react-icons/bi";
+import BigLogo from "../../img/bigLogo.svg";
 
 const StyledContainer = styled.section`
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media only screen and (min-width: 576px) {
   }
@@ -24,10 +24,17 @@ const StyledContainer = styled.section`
   }
 `;
 
+const StyledContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+`;
+
 const StyledImage = styled.img`
-  width: 200px;
-  height: 200px;
-  border: 2px solid red;
+  max-width: 80vw;
+  max-height: 40vh;
   margin-bottom: 25px;
 `;
 
@@ -85,23 +92,25 @@ const StyledSubTitle = styled.h2`
 const LandingPage = () => {
   return (
     <StyledContainer>
-      <StyledImage src="" alt="naprawiamy-pralki-img" />
-      <StyledTextWrapper>
-        <StyledTitle>Naprawa pralek</StyledTitle>
-        <StyledSubTitle>Zenon Szalast</StyledSubTitle>
-      </StyledTextWrapper>
-      <StyledInfoContainer>
-        <StyledInfoWrap>
-          <StyledInfo>
-            <BsTelephone />
-            <p>+48 123 456 789</p>
-          </StyledInfo>
-          <StyledInfo>
-            <BiTime />
-            <p>8:00 - 21:00</p>
-          </StyledInfo>
-        </StyledInfoWrap>
-      </StyledInfoContainer>
+      <StyledContentContainer>
+        <StyledImage src={BigLogo} alt='naprawiamy-pralki-img' />
+        <StyledTextWrapper>
+          <StyledTitle>Naprawa pralek</StyledTitle>
+          <StyledSubTitle>Zenon Szalast</StyledSubTitle>
+        </StyledTextWrapper>
+        <StyledInfoContainer>
+          <StyledInfoWrap>
+            <StyledInfo>
+              <BsTelephone />
+              <p>+48 123 456 789</p>
+            </StyledInfo>
+            <StyledInfo>
+              <BiTime />
+              <p>8:00 - 21:00</p>
+            </StyledInfo>
+          </StyledInfoWrap>
+        </StyledInfoContainer>
+      </StyledContentContainer>
     </StyledContainer>
   );
 };
