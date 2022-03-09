@@ -9,10 +9,10 @@ const MobileMenu = ({ setIsOpenHandler }, ref) => {
   return (
     <MobileMenuContainer
       ref={ref}
-      initial={{ x: "100vw" }}
-      animate={{ x: 0 }}
-      exit={{ y: "-100vh" }}
-      transition={{ duration: 0.5 }}
+      initial={{clipPath: 'circle(0px at 95% -10%)' }}
+      animate={{ clipPath: 'circle(1200px at 90% -10%)' }}
+      exit={{ clipPath: 'circle(0px at 95% -10%)' }}
+      transition={{ duration: 0.7 }}
     >
       <MobileMenuWrap
        initial={{ opacity: 0 }}
