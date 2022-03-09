@@ -34,11 +34,9 @@ export const NavContainer = styled.li`
     display: none;
   }
 `;
-
 export const NavLink = styled.a`
   color: ${(props) => props.theme.colors.dark};
   font-size: ${(props) => props.theme.fontSizes.small};
-
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -47,19 +45,21 @@ export const NavLink = styled.a`
   user-select: none;
   cursor: pointer;
 `;
-
+export const BurgerWrap = styled.div``;
 export const BurgerContainer = styled.div`
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
   height: 35px;
   width: 44px;
-  cursor: pointer;
   transition: all 0.5s ease-in-out;
-  /* border: 2px solid black; */
   overflow: hidden;
   z-index: 3;
+  cursor: pointer;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 export const Burger = styled.div`
   width: 38px;
@@ -68,12 +68,9 @@ export const Burger = styled.div`
     props.isOpen === true ? "transparent" : "#333"};
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
-
-  display: none;
   transform: translate(
     ${(props) => (props.isOpen === true ? "-50px, 0px" : "0px, 0px;")}
   );
-
   &:after,
   &:before {
     content: "";
@@ -95,8 +92,5 @@ export const Burger = styled.div`
         ${(props) => (props.isOpen === true ? "50px, 0px" : "0px, -10px")}
       )
       rotate(${(props) => (props.isOpen === true ? "-45deg" : "0deg")});
-  }
-  @media screen and (max-width: 768px) {
-    display: block;
   }
 `;

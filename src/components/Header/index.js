@@ -5,9 +5,9 @@ import {
   HeaderContainer,
   LogoContainer,
   LogoType as LogoType,
-  NavWrap,
   NavContainer,
   NavLink,
+  BurgerWrap,
   BurgerContainer,
   Burger,
 } from "./HeaderElements";
@@ -30,9 +30,11 @@ const Header = () => {
         <NavLink>O firmie</NavLink>
         <NavLink>Usługi</NavLink>
       </NavContainer>
-      <BurgerContainer onClick={setIsOpenHandler}>
-        <Burger isOpen={isOpen} />
-      </BurgerContainer>
+      <BurgerWrap>
+        <BurgerContainer onClick={setIsOpenHandler}>
+          <Burger isOpen={isOpen} />
+        </BurgerContainer>
+      </BurgerWrap>
       <AnimatePresence>
         {isOpen && <MobileMenu setIsOpenHandler={setIsOpenHandler} />}
       </AnimatePresence>
