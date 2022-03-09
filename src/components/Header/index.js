@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import {AnimatePresence, motion } from "framer-motion";
-
+import React, {useState} from "react";
+import {AnimatePresence, motion} from "framer-motion";
+import LogoSrc from "../../img/logoType.svg";
+import {useNavigate} from "react-router-dom";
 import {
   HeaderContainer,
   LogoContainer,
-  Logo,
+  LogoType as LogoType,
   NavWrap,
   NavContainer,
   NavLink,
@@ -13,14 +14,18 @@ import {
 } from "./HeaderElements";
 import MobileMenu from "./MobileMenu";
 const Header = () => {
+  const navigate = useNavigate();
   const [isOpen, setisOpen] = useState(false);
   const setIsOpenHandler = () => {
     setisOpen(!isOpen);
   };
+  const redirectToHomePageHandler = () => {
+    navigate("/");
+  };
   return (
     <HeaderContainer>
-      <LogoContainer>
-        <Logo />
+      <LogoContainer onClick={redirectToHomePageHandler}>
+        <LogoType src={LogoSrc} />
       </LogoContainer>
       <NavWrap>
         <NavContainer>
@@ -31,9 +36,7 @@ const Header = () => {
       <BurgerContainer onClick={setIsOpenHandler}>
         <Burger isOpen={isOpen} />
       </BurgerContainer>
-      <AnimatePresence>
-      {isOpen && <MobileMenu setIsOpenHandler={setIsOpenHandler} />}
-      </AnimatePresence>
+      <AnimatePresence>{isOpen && <MobileMenu setIsOpenHandler={setIsOpenHandler} />}</AnimatePresence>
     </HeaderContainer>
   );
 };
