@@ -35,11 +35,6 @@ const MobileMenu = ({ setIsOpenHandler }, ref) => {
             Usługi
           </StyledLink>
         </NavItem>
-        <NavItem>
-          <StyledLink onClick={setIsOpenHandler} to="/">
-            Kontakt
-          </StyledLink>
-        </NavItem>
       </MobileMenuWrap>
     </MobileMenuContainer>
   );

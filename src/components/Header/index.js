@@ -26,7 +26,6 @@ const Header = () => {
         <NavContainer>
           <NavLink>O firmie</NavLink>
           <NavLink>Usługi</NavLink>
-          <NavLink>Kontakt</NavLink>
         </NavContainer>
       </NavWrap>
       <BurgerContainer onClick={setIsOpenHandler}>

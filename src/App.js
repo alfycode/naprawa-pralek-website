@@ -15,7 +15,7 @@ const App = () => {
         {/* <Landing />
         <AboutUs />
         <Services />
-        <Contact /> */}
+         */}
       </Container>
     </Theme>
   );

@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import {BsTelephone} from 'react-icons/bs'
-import {BiMap, BiTime} from 'react-icons/bi'
+import React from "react";
+import styled from "styled-components";
+import { BsTelephone } from "react-icons/bs";
+import { BiMap, BiTime } from "react-icons/bi";
 
 const StyledContainer = styled.section`
   width: 100%;
@@ -12,19 +12,15 @@ const StyledContainer = styled.section`
   justify-content: center;
 
   @media only screen and (min-width: 576px) {
-
   }
 
   @media only screen and (min-width: 768px) {
-    
   }
 
   @media only screen and (min-width: 992px) {
-    
   }
 
   @media only screen and (min-width: 1200px) {
-    
   }
 `;
 
@@ -48,7 +44,7 @@ const StyledInfoContainer = styled.div`
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     position: absolute;
@@ -86,11 +82,10 @@ const StyledSubTitle = styled.h2`
   font-size: 1.75em;
 `;
 
-
 const LandingPage = () => {
   return (
     <StyledContainer>
-      <StyledImage src='' alt='naprawiamy-pralki-img' />
+      <StyledImage src="" alt="naprawiamy-pralki-img" />
       <StyledTextWrapper>
         <StyledTitle>Naprawa pralek</StyledTitle>
         <StyledSubTitle>Zenon Szalast</StyledSubTitle>
@@ -100,10 +95,6 @@ const LandingPage = () => {
           <StyledInfo>
             <BsTelephone />
             <p>+48 123 456 789</p>
-          </StyledInfo>
-          <StyledInfo>
-            <BiMap />
-            <p>ul. Harnasie 15/17</p>
           </StyledInfo>
           <StyledInfo>
             <BiTime />
