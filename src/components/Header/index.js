@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import {AnimatePresence, motion} from "framer-motion";
 import LogoSrc from "../../img/logoType.svg";
-import {useNavigate} from "react-router-dom";
 import {
   HeaderContainer,
   LogoContainer,
@@ -14,13 +13,13 @@ import {
 } from "./HeaderElements";
 import MobileMenu from "./MobileMenu";
 const Header = () => {
-  const navigate = useNavigate();
   const [isOpen, setisOpen] = useState(false);
   const setIsOpenHandler = () => {
     setisOpen(!isOpen);
   };
   const redirectToHomePageHandler = () => {
-    navigate("/");
+    setisOpen(false);
+    // here it we should use react scroll to scroll to home page
   };
   return (
     <HeaderContainer>
