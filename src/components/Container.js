@@ -7,6 +7,6 @@ export const Container = styled.div`
   min-height: 100vh;
   width: 100%;
   background: ${(props) =>
-    props.color ? props.theme.colors.whiteLinear : "#555"};
+    props.bgColor ? props.theme.colors.whiteLinear : "#555"};
   padding-top: ${(props) => (props.landing ? "80px" : "0")};
 `;

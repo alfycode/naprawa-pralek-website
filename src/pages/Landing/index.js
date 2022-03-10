@@ -72,7 +72,7 @@ const StyledSubTitle = styled.h2`
 
 const LandingPage = () => {
   return (
-    <Container landing color>
+    <Container landing bgColor>
       <StyledContentContainer>
         <StyledImage src={BigLogo} alt="naprawiamy-pralki-img" />
         <StyledTextWrapper>
