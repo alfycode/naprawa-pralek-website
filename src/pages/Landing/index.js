@@ -1,35 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import {BsTelephone} from "react-icons/bs";
-import {BiMap, BiTime} from "react-icons/bi";
+import { BsTelephone } from "react-icons/bs";
+import { BiMap, BiTime } from "react-icons/bi";
 import BigLogo from "../../img/bigLogo.svg";
-
-const StyledContainer = styled.section`
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-
-  @media only screen and (min-width: 576px) {
-  }
-
-  @media only screen and (min-width: 768px) {
-  }
-
-  @media only screen and (min-width: 992px) {
-  }
-
-  @media only screen and (min-width: 1200px) {
-  }
-`;
+import { Container } from "../../components/Container";
 
 const StyledContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
   min-height: 100vh;
 `;
 
@@ -50,7 +30,7 @@ const StyledInfoContainer = styled.div`
   margin-top: 25px;
   background-color: rgba(79, 170, 231, 0.25);
   position: relative;
-  
+
   &::after {
     content: "";
     width: 100%;
@@ -92,15 +72,15 @@ const StyledSubTitle = styled.h2`
 
 const LandingPage = () => {
   return (
-    <StyledContainer>
+    <Container landing color>
       <StyledContentContainer>
-        <StyledImage src={BigLogo} alt='naprawiamy-pralki-img' />
+        <StyledImage src={BigLogo} alt="naprawiamy-pralki-img" />
         <StyledTextWrapper>
           <StyledTitle>Naprawa pralek</StyledTitle>
           <StyledSubTitle>Zenon Szalast</StyledSubTitle>
         </StyledTextWrapper>
       </StyledContentContainer>
-    </StyledContainer>
+    </Container>
   );
 };
 

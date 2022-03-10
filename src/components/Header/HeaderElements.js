@@ -8,13 +8,14 @@ export const HeaderContainer = styled.header`
   min-height: 80px;
   height: 10vh;
   max-height: 120px;
-  background-color: cadetblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2em;
   z-index: 999;
   overflow: hidden;
+  background-color: transparent;
+  
 `;
 export const LogoContainer = styled.div`
   display: flex;
