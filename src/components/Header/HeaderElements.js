@@ -14,8 +14,11 @@ export const HeaderContainer = styled.header`
   padding: 0 2em;
   z-index: 999;
   overflow: hidden;
-  background-color: transparent;
-  
+  background: ${(props) =>
+    props.visible ? props.theme.colors.whiteLinear : "transparent"};
+  box-shadow: ${(props) =>
+    props.visible === true ? "0px 1px 15px -10px #333" : "none"};
+  transition: all 0.5s ease;
 `;
 export const LogoContainer = styled.div`
   display: flex;

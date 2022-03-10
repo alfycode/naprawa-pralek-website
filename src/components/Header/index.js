@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import LogoSrc from "../../img/logoType.svg";
 import {
@@ -21,8 +21,21 @@ const Header = () => {
     setisOpen(false);
     // here it we should use react scroll to scroll to home page
   };
+
+  const [scrollTop, setScrollTop] = useState(0);
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const onScroll = (e) => {
+      setScrollTop(e.target.documentElement.scrollTop);
+      setScrolling(scrollTop > 10);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollTop]);
+
   return (
-    <HeaderContainer>
+    <HeaderContainer bgColor visible={scrolling}>
       <LogoContainer onClick={redirectToHomePageHandler}>
         <LogoType src={LogoSrc} />
       </LogoContainer>
