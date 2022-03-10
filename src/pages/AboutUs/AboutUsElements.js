@@ -72,4 +72,5 @@ export const ClientOpinionText = styled.p`
   font-size: 0.9em;
   font-weight: 500;
   color: #333;
+  padding: .5em .5em 1em .5em;
 `;
