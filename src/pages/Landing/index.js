@@ -30,6 +30,7 @@ const StyledContentContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 80px;
+  min-height: 100vh;
 `;
 
 const StyledImage = styled.img`
@@ -49,7 +50,7 @@ const StyledInfoContainer = styled.div`
   margin-top: 25px;
   background-color: rgba(79, 170, 231, 0.25);
   position: relative;
-
+  
   &::after {
     content: "";
     width: 100%;
@@ -98,18 +99,6 @@ const LandingPage = () => {
           <StyledTitle>Naprawa pralek</StyledTitle>
           <StyledSubTitle>Zenon Szalast</StyledSubTitle>
         </StyledTextWrapper>
-        <StyledInfoContainer>
-          <StyledInfoWrap>
-            <StyledInfo>
-              <BsTelephone />
-              <p>+48 123 456 789</p>
-            </StyledInfo>
-            <StyledInfo>
-              <BiTime />
-              <p>8:00 - 21:00</p>
-            </StyledInfo>
-          </StyledInfoWrap>
-        </StyledInfoContainer>
       </StyledContentContainer>
     </StyledContainer>
   );

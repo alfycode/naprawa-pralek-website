@@ -12,8 +12,8 @@ const App = () => {
       <Container>
         <Header />
         <Landing />
-        {/* <AboutUs />
-          <Services /> */}
+        <AboutUs />
+          {/* <Services /> */}
       </Container>
     </Theme>
   );
