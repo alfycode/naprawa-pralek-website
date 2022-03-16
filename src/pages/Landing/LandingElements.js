@@ -26,6 +26,20 @@ export const StyledImage = styled.img`
   margin-bottom: 20px;
 `;
 
+export const StyledScrollIcon = styled.img`
+  height: 40px;
+  position: absolute;
+  bottom: 10px;
+
+  @media screen and (min-width: 550px) {
+    position: static;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 10px;
+  }
+`;
+
 export const StyledTextWrapper = styled.div`
   text-align: center;
   margin-bottom: 20px;
