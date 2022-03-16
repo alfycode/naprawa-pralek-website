@@ -5,8 +5,10 @@ import BigLogo from "../../img/bigLogo.svg";
 import {Container} from "../../components/Container";
 import {
   StyledContentContainer,
+  StyledTextContentContainer,
   StyledImage,
   StyledTextWrapper,
+  StyledCompanyNameWrapper,
   StyledTitle,
   StyledSubTitle,
   StyledPhoneHoursContainer,
@@ -22,24 +24,29 @@ const LandingPage = () => {
     <Container landing bgColor>
       <StyledContentContainer>
         <StyledImage src={BigLogo} alt='naprawiamy-pralki-img' />
-        <StyledTextWrapper>
-          <StyledTitle>Naprawa pralek i AGD</StyledTitle>
-          <StyledSubTitle>Szalast Zenon</StyledSubTitle>
-        </StyledTextWrapper>
-        <StyledPhoneHoursContainer>
-          <StyledHoursContainer>
-            <StyledClockLogo>
-              <BiTime />
-            </StyledClockLogo>
-            <StyledHours>8:00 - 21:00</StyledHours>
-          </StyledHoursContainer>
-          <StyledPhoneContainer href='tel:+48603663053'>
-            <StyledPhoneLogo>
-              <BsTelephone />
-            </StyledPhoneLogo>
-            <StyledPhone>+48 603 663 053</StyledPhone>
-          </StyledPhoneContainer>
-        </StyledPhoneHoursContainer>
+        <StyledTextContentContainer>
+          <StyledTextWrapper>
+            <StyledCompanyNameWrapper>
+              <StyledTitle>Naprawa</StyledTitle>
+              <StyledTitle nowrap>pralek i AGD</StyledTitle>
+            </StyledCompanyNameWrapper>
+            <StyledSubTitle>Szalast Zenon</StyledSubTitle>
+          </StyledTextWrapper>
+          <StyledPhoneHoursContainer>
+            <StyledHoursContainer>
+              <StyledClockLogo>
+                <BiTime />
+              </StyledClockLogo>
+              <StyledHours>8:00 - 21:00</StyledHours>
+            </StyledHoursContainer>
+            <StyledPhoneContainer href='tel:+48603663053'>
+              <StyledPhoneLogo>
+                <BsTelephone />
+              </StyledPhoneLogo>
+              <StyledPhone>+48 603 663 053</StyledPhone>
+            </StyledPhoneContainer>
+          </StyledPhoneHoursContainer>
+        </StyledTextContentContainer>
       </StyledContentContainer>
     </Container>
   );
