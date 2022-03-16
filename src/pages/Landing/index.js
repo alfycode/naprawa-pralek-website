@@ -37,7 +37,7 @@ const LandingPage = () => {
             <StyledPhoneLogo>
               <BsTelephone />
             </StyledPhoneLogo>
-            <StyledPhone>+48 663 682 480</StyledPhone>
+            <StyledPhone>+48 603 663 053</StyledPhone>
           </StyledPhoneContainer>
         </StyledPhoneHoursContainer>
       </StyledContentContainer>
