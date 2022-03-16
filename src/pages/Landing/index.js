@@ -1,12 +1,14 @@
 import React from "react";
 import {BsTelephone} from "react-icons/bs";
-import {BiMap, BiTime} from "react-icons/bi";
+import {BiTime} from "react-icons/bi";
 import BigLogo from "../../img/bigLogo.svg";
+import ScrollLogo from "../../img/scroll_icon.svg";
 import {Container} from "../../components/Container";
 import {
   StyledContentContainer,
   StyledTextContentContainer,
   StyledImage,
+  StyledScrollIcon,
   StyledTextWrapper,
   StyledCompanyNameWrapper,
   StyledTitle,
@@ -48,6 +50,7 @@ const LandingPage = () => {
           </StyledPhoneHoursContainer>
         </StyledTextContentContainer>
       </StyledContentContainer>
+      <StyledScrollIcon src={ScrollLogo}></StyledScrollIcon>
     </Container>
   );
 };
