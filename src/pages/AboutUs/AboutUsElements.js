@@ -18,6 +18,11 @@ export const AboutUsTitle = styled.h2`
   color: #333;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   padding-bottom: 0.5em;
+  /* background-color: gray; */
+  /* @media screen and (max-width: 768px) {
+    font-size: 5em;
+    text-align: center;
+  } */
 `;
 export const TitleSpan = styled.span`
   color: #fff;
@@ -72,5 +77,5 @@ export const ClientOpinionText = styled.p`
   font-size: 0.9em;
   font-weight: 500;
   color: #333;
-  padding: .5em .5em 1em .5em;
+  padding: 0.5em 0.5em 1em 0.5em;
 `;
