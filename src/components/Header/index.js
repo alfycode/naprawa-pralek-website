@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import React, {useState, useEffect} from "react";
+import {AnimatePresence, motion} from "framer-motion";
 import LogoSrc from "../../img/logoType.svg";
 import {
   HeaderContainer,
@@ -48,9 +48,7 @@ const Header = () => {
           <Burger isOpen={isOpen} />
         </BurgerContainer>
       </BurgerWrap>
-      <AnimatePresence>
-        {isOpen && <MobileMenu setIsOpenHandler={setIsOpenHandler} />}
-      </AnimatePresence>
+      <AnimatePresence>{isOpen && <MobileMenu setIsOpenHandler={setIsOpenHandler} />}</AnimatePresence>
     </HeaderContainer>
   );
 };

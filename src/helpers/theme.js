@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import {createGlobalStyle} from "styled-components";
 
 export const theme = {
   colors: {
@@ -26,7 +26,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     font-size: 20px;
-    font-family: ${({ theme }) => theme.fonts}, sans-serif;
+    font-family: ${({theme}) => theme.fonts}, sans-serif;
     src:url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
   }
 `;

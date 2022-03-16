@@ -7,12 +7,11 @@ export const Container = styled.div`
   min-height: 100vh;
   height: fit-content;
   width: 100%;
-  background: ${(props) =>
-    props.bgColor ? props.theme.colors.whiteLinear : "#4faae7"};
+  background: ${(props) => (props.bgColor ? props.theme.colors.whiteLinear : "#4faae7")};
   padding-top: ${(props) => (props.landing ? "80px" : "0")};
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: ${(props) => (props.landing ? "center" : "flex-start")};
   justify-content: center;
   font-size: 20px;
   @media screen and (max-width: 1600px) {
@@ -27,7 +26,7 @@ export const Container = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: ${(props) => (props.landing ? "center" : "flex-start")};
     font-size: 12px;
   }
   @media screen and (max-width: 550px) {
