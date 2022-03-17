@@ -12,14 +12,12 @@ export const AboutUsContentWrap = styled.div`
     width: 80%;
   }
   @media screen and (min-width: 960px) {
-
     width: ${(props) => (props.right ? "50%" : "50%")};
   }
 `;
 export const AboutUsTitle = styled.h2`
   width: 250px;
   font-size: 4.5em;
-
   font-weight: 800;
   text-align: center;
   line-height: 1em;
@@ -27,24 +25,24 @@ export const AboutUsTitle = styled.h2`
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   padding-top: 0.5em;
   @media screen and (min-width: 550px) {
-
     width: 350px;
   }
   @media screen and (min-width: 960px) {
     width: ${(props) => (props.right ? "fit-content" : "350px")};
-    font-size: ${(props) => (props.right ? "2.4em" : "2.2em")};
-
+    font-size: ${(props) => (props.right ? "2.2em" : "2.2em")};
     text-align: left;
     padding-top: 100px;
   }
   @media screen and (min-width: 1280px) {
-
     width: ${(props) => (props.right ? "fit-content" : "490px")};
-    font-size: 2.7em;
+    font-size: 2.6em;
   }
   @media screen and (min-width: 1600px) {
     width: ${(props) => (props.right ? "fit-content" : "550px")};
-
+    font-size: 3em;
+  }
+  @media screen and (min-width: 1920px) {
+    width: ${(props) => (props.right ? "fit-content" : "600px")};
     font-size: 3em;
   }
 `;
@@ -57,14 +55,10 @@ export const AboutUsText = styled.p`
   line-height: 1.3em;
   text-align: center;
   color: #fff;
-  /* background-color: red; */
   width: 85%;
   @media screen and (min-width: 960px) {
-
-    font-size: 1.6em;
+    font-size: 1.5em;
     text-align: left;
-    /* padding-left: 1em; */
-
     margin-top: 1em;
   }
 `;
@@ -77,11 +71,8 @@ export const AboutUsOpinionsWrap = styled.div`
   align-items: center;
   gap: 3em;
 
-
   @media screen and (min-width: 768px) {
     width: 95%;
-
-
   }
   @media screen and (min-width: 960px) {
     gap: 1em;
@@ -118,7 +109,6 @@ export const ClientProfilePicture = styled.div`
 
   @media screen and (orientation: landscape) {
     max-width: 80px;
-
   }
 `;
 export const ClientOpinionTextWrap = styled.div`
