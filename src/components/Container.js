@@ -4,7 +4,7 @@ export const Container = styled.div`
   position: relative;
   top: 0;
   left: 0;
-  min-height: ${props => props.landing ? "100vh" : "fit-content"};
+  min-height: ${props => props.landing ? "100vh" : "90vh"};
   height: fit-content;
   width: 100%;
   background: ${(props) =>
@@ -26,15 +26,15 @@ export const Container = styled.div`
     flex-direction: row;
     align-items: ${props => props.landing ? "center" : "flex-start"};
     justify-content: center;
-    font-size: 15px;
+    font-size: 16px;
   }
   @media screen and (min-width: 1280px) {
-    font-size: 17px;
+    font-size: 18px;
   }
   @media screen and (min-width: 1600px) {
-    font-size: 19px;
+    font-size: 20px;
   }
   @media screen and (min-width: 1920px) {
-    font-size: 21px;
+    font-size: 22px;
   }
 `;

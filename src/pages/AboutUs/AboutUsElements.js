@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BigLogo from "../../img/bigLogo.svg";
+
 export const AboutUsContentWrap = styled.div`
   width: 90%;
   display: flex;
@@ -12,33 +12,39 @@ export const AboutUsContentWrap = styled.div`
     width: 80%;
   }
   @media screen and (min-width: 960px) {
-    width: ${(props) => (props.right ? "60%" : "40%")};
+    width: ${(props) => (props.right ? "55%" : "45%")};
   }
 `;
 export const AboutUsTitle = styled.h2`
-  width: 90%;
-  font-size: 4.5em;
+  width: 290px;
+  font-size: 4em;
   font-weight: 800;
   text-align: center;
   line-height: 1em;
   color: #333;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   padding-top: 0.5em;
+  @media screen and (min-width: 550px) {
+    font-size: 5em;
+    width: 450px;
+  }
   @media screen and (min-width: 960px) {
-    width: ${(props) => (props.right ? "fit-content" : "80%")};
-    font-size: ${(props) => (props.right ? "2.5em" : "2.2em")};
+    width: ${(props) => (props.right ? "fit-content" : "340px")};
+    font-size: 2.1em;
     text-align: left;
     padding-top: 100px;
   }
-  @media screen and (min-width: 1100px) {
-    font-size: 2.5em;
-  }
   @media screen and (min-width: 1280px) {
+    font-size: 2.4em;
+    width: ${(props) => (props.right ? "fit-content" : "420px")};
+  }
+  @media screen and (min-width: 1600px) {
     font-size: 2.7em;
-    width: ${(props) => (props.right ? "fit-content" : "82%")};
+    width: ${(props) => (props.right ? "fit-content" : "520px")};
   }
   @media screen and (min-width: 1600px) {
     font-size: 3em;
+    width: ${(props) => (props.right ? "fit-content" : "580px")};
   }
 `;
 export const TitleSpan = styled.span`
@@ -51,10 +57,10 @@ export const AboutUsText = styled.p`
   text-align: center;
   color: #fff;
   @media screen and (min-width: 960px) {
-    font-size: 1.5em;
+    font-size: 1.35em;
     text-align: left;
-    padding-left: 1em;
     margin-top: 1em;
+    width: 80%;
   }
 `;
 export const AboutUsOpinionsWrap = styled.div`
@@ -65,9 +71,9 @@ export const AboutUsOpinionsWrap = styled.div`
   justify-content: center;
   align-items: center;
   gap: 3em;
-  
+
   @media screen and (min-width: 768px) {
-    width: 80%;
+    width: 85%;
   }
   @media screen and (min-width: 960px) {
     gap: 1em;
@@ -86,23 +92,28 @@ export const AboutUsOpinionContainer = styled.div`
   align-items: center;
   gap: 2em;
   @media screen and (min-width: 550px) {
-    width: 80%;
+    width: 90%;
   }
   @media screen and (min-width: 960px) {
     gap: 1em;
     flex-direction: row;
-    padding: 1em;
+    padding: 0.8em;
   }
 `;
 export const ClientProfilePicture = styled.div`
-  min-width: 80px;
+  min-width: 60px;
   width: 30%;
-  max-width: 140px;
+  max-width: 120px;
   aspect-ratio: 1 / 1;
   border-radius: 100%;
   background-color: #fff;
+
+  @media screen and (min-width: 960px) {
+    width: 15%;
+  }
 `;
 export const ClientOpinionTextWrap = styled.div`
+  width: 80%;
   text-align: center;
   @media screen and (min-width: 960px) {
     text-align: left;
@@ -112,7 +123,7 @@ export const ClientNameText = styled.h3`
   font-size: 1.8em;
   color: #333;
   @media screen and (min-width: 960px) {
-    font-size: 0.95em;
+    font-size: 0.8em;
   }
 `;
 export const ClientOpinionText = styled.p`
@@ -121,6 +132,6 @@ export const ClientOpinionText = styled.p`
   color: #333;
   padding: 0.5em 0.5em 1em 0.5em;
   @media screen and (min-width: 960px) {
-    font-size: 0.85em;
+    font-size: 0.75em;
   }
 `;
