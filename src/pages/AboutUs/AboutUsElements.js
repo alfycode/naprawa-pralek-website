@@ -12,11 +12,11 @@ export const AboutUsContentWrap = styled.div`
     width: 80%;
   }
   @media screen and (min-width: 960px) {
-    width: ${(props) => (props.right ? "60%" : "40%")};
+    width: ${(props) => (props.right ? "50%" : "50%")};
   }
 `;
 export const AboutUsTitle = styled.h2`
-  width: 90%;
+  width: 250px;
   font-size: 4.5em;
   font-weight: 800;
   text-align: center;
@@ -24,9 +24,12 @@ export const AboutUsTitle = styled.h2`
   color: #333;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   padding-top: 0.5em;
+  @media screen and (min-width: 550px) {
+    width: 350px;
+  }
   @media screen and (min-width: 960px) {
-    width: ${(props) => (props.right ? "fit-content" : "80%")};
-    font-size: ${(props) => (props.right ? "2.5em" : "2.2em")};
+    width: ${(props) => (props.right ? "fit-content" : "350px")};
+    font-size: ${(props) => (props.right ? "2.4em" : "2.2em")};
     text-align: left;
     padding-top: 100px;
   }
@@ -34,10 +37,11 @@ export const AboutUsTitle = styled.h2`
     font-size: 2.5em;
   }
   @media screen and (min-width: 1280px) {
+    width: ${(props) => (props.right ? "fit-content" : "490px")};
     font-size: 2.7em;
-    width: ${(props) => (props.right ? "fit-content" : "82%")};
   }
   @media screen and (min-width: 1600px) {
+    width: ${(props) => (props.right ? "fit-content" : "550px")};
     font-size: 3em;
   }
 `;
@@ -50,10 +54,12 @@ export const AboutUsText = styled.p`
   line-height: 1.3em;
   text-align: center;
   color: #fff;
+  /* background-color: red; */
+  width: 85%;
   @media screen and (min-width: 960px) {
-    font-size: 1.5em;
+    font-size: 1.6em;
     text-align: left;
-    padding-left: 1em;
+    /* padding-left: 1em; */
     margin-top: 1em;
   }
 `;
@@ -65,9 +71,9 @@ export const AboutUsOpinionsWrap = styled.div`
   justify-content: center;
   align-items: center;
   gap: 3em;
-  
+
   @media screen and (min-width: 768px) {
-    width: 80%;
+    width: 95%;
   }
   @media screen and (min-width: 960px) {
     gap: 1em;
@@ -86,7 +92,7 @@ export const AboutUsOpinionContainer = styled.div`
   align-items: center;
   gap: 2em;
   @media screen and (min-width: 550px) {
-    width: 80%;
+    width: 90%;
   }
   @media screen and (min-width: 960px) {
     gap: 1em;
@@ -101,6 +107,9 @@ export const ClientProfilePicture = styled.div`
   aspect-ratio: 1 / 1;
   border-radius: 100%;
   background-color: #fff;
+  @media screen and (orientation: landscape) {
+    max-width: 80px;
+  }
 `;
 export const ClientOpinionTextWrap = styled.div`
   text-align: center;
