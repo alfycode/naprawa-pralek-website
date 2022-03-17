@@ -28,8 +28,8 @@ const AboutUsPage = () => {
           szerokie grono zaufanych klientów.
         </AboutUsText>
       </AboutUsContentWrap>
-      <AboutUsContentWrap second>
-        <AboutUsTitle>
+      <AboutUsContentWrap second right>
+        <AboutUsTitle right>
           Opinie naszych <TitleSpan second>klientów</TitleSpan>
         </AboutUsTitle>
         <AboutUsOpinionsWrap>
