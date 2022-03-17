@@ -12,12 +12,14 @@ export const AboutUsContentWrap = styled.div`
     width: 80%;
   }
   @media screen and (min-width: 960px) {
+
     width: ${(props) => (props.right ? "50%" : "50%")};
   }
 `;
 export const AboutUsTitle = styled.h2`
   width: 250px;
   font-size: 4.5em;
+
   font-weight: 800;
   text-align: center;
   line-height: 1em;
@@ -25,23 +27,24 @@ export const AboutUsTitle = styled.h2`
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   padding-top: 0.5em;
   @media screen and (min-width: 550px) {
+
     width: 350px;
   }
   @media screen and (min-width: 960px) {
     width: ${(props) => (props.right ? "fit-content" : "350px")};
     font-size: ${(props) => (props.right ? "2.4em" : "2.2em")};
+
     text-align: left;
     padding-top: 100px;
   }
-  @media screen and (min-width: 1100px) {
-    font-size: 2.5em;
-  }
   @media screen and (min-width: 1280px) {
+
     width: ${(props) => (props.right ? "fit-content" : "490px")};
     font-size: 2.7em;
   }
   @media screen and (min-width: 1600px) {
     width: ${(props) => (props.right ? "fit-content" : "550px")};
+
     font-size: 3em;
   }
 `;
@@ -57,9 +60,11 @@ export const AboutUsText = styled.p`
   /* background-color: red; */
   width: 85%;
   @media screen and (min-width: 960px) {
+
     font-size: 1.6em;
     text-align: left;
     /* padding-left: 1em; */
+
     margin-top: 1em;
   }
 `;
@@ -72,8 +77,11 @@ export const AboutUsOpinionsWrap = styled.div`
   align-items: center;
   gap: 3em;
 
+
   @media screen and (min-width: 768px) {
     width: 95%;
+
+
   }
   @media screen and (min-width: 960px) {
     gap: 1em;
@@ -97,21 +105,24 @@ export const AboutUsOpinionContainer = styled.div`
   @media screen and (min-width: 960px) {
     gap: 1em;
     flex-direction: row;
-    padding: 1em;
+    padding: 0.8em;
   }
 `;
 export const ClientProfilePicture = styled.div`
-  min-width: 80px;
+  min-width: 60px;
   width: 30%;
-  max-width: 140px;
+  max-width: 120px;
   aspect-ratio: 1 / 1;
   border-radius: 100%;
   background-color: #fff;
+
   @media screen and (orientation: landscape) {
     max-width: 80px;
+
   }
 `;
 export const ClientOpinionTextWrap = styled.div`
+  width: 80%;
   text-align: center;
   @media screen and (min-width: 960px) {
     text-align: left;
@@ -121,7 +132,7 @@ export const ClientNameText = styled.h3`
   font-size: 1.8em;
   color: #333;
   @media screen and (min-width: 960px) {
-    font-size: 0.95em;
+    font-size: 0.8em;
   }
 `;
 export const ClientOpinionText = styled.p`
@@ -130,6 +141,6 @@ export const ClientOpinionText = styled.p`
   color: #333;
   padding: 0.5em 0.5em 1em 0.5em;
   @media screen and (min-width: 960px) {
-    font-size: 0.85em;
+    font-size: 0.75em;
   }
 `;

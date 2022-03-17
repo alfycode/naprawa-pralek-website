@@ -15,7 +15,6 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 10px;
-
   @media screen and (min-width: 550px) {
     font-size: 12px;
   }
@@ -26,15 +25,15 @@ export const Container = styled.div`
     flex-direction: row;
     align-items: ${props => props.landing ? "center" : "flex-start"};
     justify-content: center;
-    font-size: 15px;
+    font-size: 16px;
   }
   @media screen and (min-width: 1280px) {
-    font-size: 17px;
+    font-size: 18px;
   }
   @media screen and (min-width: 1600px) {
-    font-size: 19px;
+    font-size: 20px;
   }
   @media screen and (min-width: 1920px) {
-    font-size: 21px;
+    font-size: 22px;
   }
 `;
