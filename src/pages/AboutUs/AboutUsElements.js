@@ -12,12 +12,14 @@ export const AboutUsContentWrap = styled.div`
     width: 80%;
   }
   @media screen and (min-width: 960px) {
-    width: ${(props) => (props.right ? "55%" : "45%")};
+
+    width: ${(props) => (props.right ? "50%" : "50%")};
   }
 `;
 export const AboutUsTitle = styled.h2`
-  width: 290px;
-  font-size: 4em;
+  width: 250px;
+  font-size: 4.5em;
+
   font-weight: 800;
   text-align: center;
   line-height: 1em;
@@ -25,25 +27,24 @@ export const AboutUsTitle = styled.h2`
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   padding-top: 0.5em;
   @media screen and (min-width: 550px) {
-    width: 450px;
-    font-size: 5em;
+
+    width: 350px;
   }
   @media screen and (min-width: 960px) {
-    width: ${(props) => (props.right ? "fit-content" : "340px")};
-    font-size: 2.1em;
+    width: ${(props) => (props.right ? "fit-content" : "350px")};
+    font-size: ${(props) => (props.right ? "2.4em" : "2.2em")};
+
     text-align: left;
     padding-top: 100px;
   }
   @media screen and (min-width: 1280px) {
-    width: ${(props) => (props.right ? "fit-content" : "420px")};
-    font-size: 2.4em;
-  }
-  @media screen and (min-width: 1600px) {
-    width: ${(props) => (props.right ? "fit-content" : "520px")};
+
+    width: ${(props) => (props.right ? "fit-content" : "490px")};
     font-size: 2.7em;
   }
   @media screen and (min-width: 1600px) {
-    width: ${(props) => (props.right ? "fit-content" : "580px")};
+    width: ${(props) => (props.right ? "fit-content" : "550px")};
+
     font-size: 3em;
   }
 `;
@@ -56,10 +57,14 @@ export const AboutUsText = styled.p`
   line-height: 1.3em;
   text-align: center;
   color: #fff;
+  /* background-color: red; */
+  width: 85%;
   @media screen and (min-width: 960px) {
-    width: 80%;
-    font-size: 1.35em;
+
+    font-size: 1.6em;
     text-align: left;
+    /* padding-left: 1em; */
+
     margin-top: 1em;
   }
 `;
@@ -71,8 +76,12 @@ export const AboutUsOpinionsWrap = styled.div`
   justify-content: center;
   align-items: center;
   gap: 3em;
+
+
   @media screen and (min-width: 768px) {
-    width: 85%;
+    width: 95%;
+
+
   }
   @media screen and (min-width: 960px) {
     gap: 1em;
@@ -107,8 +116,9 @@ export const ClientProfilePicture = styled.div`
   border-radius: 100%;
   background-color: #fff;
 
-  @media screen and (min-width: 960px) {
-    width: 15%;
+  @media screen and (orientation: landscape) {
+    max-width: 80px;
+
   }
 `;
 export const ClientOpinionTextWrap = styled.div`
