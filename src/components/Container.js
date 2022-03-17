@@ -4,7 +4,7 @@ export const Container = styled.div`
   position: relative;
   top: 0;
   left: 0;
-  min-height: 100vh;
+  min-height: ${props => props.landing ? "100vh" : "fit-content"};
   height: fit-content;
   width: 100%;
   background: ${(props) =>
@@ -15,24 +15,6 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 10px;
-  /* @media screen and (max-width: 1600px) {
-    font-size: 18px;
-  }
-  @media screen and (max-width: 1280px) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: 960px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: ${(props) => (props.landing ? "center" : "center")};
-    font-size: 14px;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-  @media screen and (max-width: 550px) {
-    font-size: 10px;
-  } */
 
   @media screen and (min-width: 550px) {
     font-size: 12px;
@@ -44,6 +26,15 @@ export const Container = styled.div`
     flex-direction: row;
     align-items: ${props => props.landing ? "center" : "flex-start"};
     justify-content: center;
-    font-size: 16px;
+    font-size: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 17px;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: 19px;
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 21px;
   }
 `;
