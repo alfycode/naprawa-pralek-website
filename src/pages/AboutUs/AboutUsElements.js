@@ -25,8 +25,8 @@ export const AboutUsTitle = styled.h2`
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   padding-top: 0.5em;
   @media screen and (min-width: 550px) {
-    font-size: 5em;
     width: 450px;
+    font-size: 5em;
   }
   @media screen and (min-width: 960px) {
     width: ${(props) => (props.right ? "fit-content" : "340px")};
@@ -35,16 +35,16 @@ export const AboutUsTitle = styled.h2`
     padding-top: 100px;
   }
   @media screen and (min-width: 1280px) {
-    font-size: 2.4em;
     width: ${(props) => (props.right ? "fit-content" : "420px")};
+    font-size: 2.4em;
   }
   @media screen and (min-width: 1600px) {
-    font-size: 2.7em;
     width: ${(props) => (props.right ? "fit-content" : "520px")};
+    font-size: 2.7em;
   }
   @media screen and (min-width: 1600px) {
-    font-size: 3em;
     width: ${(props) => (props.right ? "fit-content" : "580px")};
+    font-size: 3em;
   }
 `;
 export const TitleSpan = styled.span`
@@ -57,10 +57,10 @@ export const AboutUsText = styled.p`
   text-align: center;
   color: #fff;
   @media screen and (min-width: 960px) {
+    width: 80%;
     font-size: 1.35em;
     text-align: left;
     margin-top: 1em;
-    width: 80%;
   }
 `;
 export const AboutUsOpinionsWrap = styled.div`
@@ -71,7 +71,6 @@ export const AboutUsOpinionsWrap = styled.div`
   justify-content: center;
   align-items: center;
   gap: 3em;
-
   @media screen and (min-width: 768px) {
     width: 85%;
   }
