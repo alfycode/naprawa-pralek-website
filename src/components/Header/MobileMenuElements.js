@@ -12,6 +12,7 @@ export const MobileMenuContainer = styled(motion.nav)`
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  
 `;
 export const MobileMenuWrap = styled(motion.ul)`
   width: 80%;
