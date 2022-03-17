@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BigLogo from "../../img/bigLogo.svg";
+
 export const AboutUsContentWrap = styled.div`
   width: 90%;
   display: flex;
