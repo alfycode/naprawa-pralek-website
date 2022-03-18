@@ -14,7 +14,7 @@ const App = () => {
         <Header />
         <Landing />
         <AboutUs />
-        {/* <Services /> */}
+        <Services />
       </PagesContainer>
     </Theme>
   );
