@@ -80,7 +80,7 @@ export const AboutUsOpinionsWrap = styled.div`
 `;
 export const AboutUsOpinionContainer = styled.div`
   height: fit-content;
-  width: 100%;
+  width: 80%;
   max-width: 872px;
   border-radius: 10px;
   padding: 1.5em;
@@ -91,9 +91,10 @@ export const AboutUsOpinionContainer = styled.div`
   align-items: center;
   gap: 2em;
   @media screen and (min-width: 550px) {
-    width: 90%;
+    width: 75%;
   }
   @media screen and (min-width: 960px) {
+    width: 90%;
     gap: 1em;
     flex-direction: row;
     padding: 0.8em;
@@ -112,7 +113,7 @@ export const ClientProfilePicture = styled.div`
   }
 `;
 export const ClientOpinionTextWrap = styled.div`
-  width: 80%;
+  width: 90%;
   text-align: center;
   @media screen and (min-width: 960px) {
     text-align: left;
