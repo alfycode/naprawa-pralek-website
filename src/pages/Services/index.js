@@ -1,12 +1,25 @@
 import React from "react";
 import { Container } from "../../components/Container";
-import { ServicesRow, ServiceItem } from "./ServicesElements";
+import { TitleSpan } from "../AboutUs/AboutUsElements";
+import {
+  ServicesRow,
+  ServiceItem,
+  ServiceTitle,
+  ServiceText,
+} from "./ServicesElements";
 
 const ServicesPage = () => {
   return (
     <Container bgColor>
       <ServicesRow>
-        <ServiceItem></ServiceItem>
+        <ServiceItem>
+          <ServiceTitle>
+            Jakie <TitleSpan>usługi </TitleSpan>oferujemy?
+          </ServiceTitle>
+          <ServiceText>
+            Szalast Z. Naprawa i serwis pralek automatycznych.
+          </ServiceText>
+        </ServiceItem>
         <ServiceItem></ServiceItem>
         <ServiceItem></ServiceItem>
       </ServicesRow>

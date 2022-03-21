@@ -15,6 +15,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 10px;
+  flex-wrap: wrap;
   @media screen and (min-width: 550px) {
     font-size: 12px;
   }
