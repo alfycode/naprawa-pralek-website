@@ -1,14 +1,14 @@
 import styled from "styled-components";
-
+import { theme } from "../helpers/theme";
 export const Container = styled.div`
   position: relative;
   top: 0;
   left: 0;
-  min-height: 100vh;
+  min-height: ${(props) => (props.vh ? "100vh" : "90vh")};
   height: fit-content;
   width: 100%;
   background: ${(props) =>
-    props.bgColor ? props.theme.colors.whiteLinear : "#4faae7"};
+    props.bgColor ? theme.colors.whiteLinear : theme.colors.darkBlue};
   padding-top: ${(props) => (props.landing ? "80px" : "0")};
   display: flex;
   flex-direction: column;
@@ -23,9 +23,9 @@ export const Container = styled.div`
     font-size: 14px;
   }
   @media screen and (min-width: 960px) {
-    flex-direction: row;
-    align-items: ${props => props.landing ? "center" : "flex-start"};
-    justify-content: center;
+    flex-direction: ${(props) => (props.service ? "column" : "row")};
+    align-items: ${(props) => (props.landing ? "center" : "flex-start")};
+    justify-content: ${(props) => (props.service ? "flex-start" : "center")};
     font-size: 16px;
   }
   @media screen and (min-width: 1280px) {
