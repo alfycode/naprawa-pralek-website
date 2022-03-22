@@ -1,9 +1,9 @@
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const theme = {
   colors: {
     dark: "#333",
-    whiteLinear: "linear-gradient(90deg, #ECE9E6 0%, #FFFFFF 100%)",
+    whiteLinear: "linear-gradient(90deg, #dde 0%, #eee 100%)",
     menuLinear: "linear-gradient(40deg, #9FD9FF 0%, #fff 100%)",
     lightBlue: "rgba(79, 170, 231, 0.25)",
     darkBlue: "#4FAAE7",
@@ -18,7 +18,7 @@ export const theme = {
   },
 };
 export const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
   * {
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +26,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     font-size: 20px;
-    font-family: ${({theme}) => theme.fonts}, sans-serif;
-    src:url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+    font-family: ${({ theme }) => theme.fonts}, sans-serif;
+    src:url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
   }
 `;

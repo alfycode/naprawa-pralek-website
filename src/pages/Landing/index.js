@@ -1,9 +1,9 @@
 import React from "react";
-import {BsTelephone} from "react-icons/bs";
-import {BiTime} from "react-icons/bi";
+import { BsTelephone } from "react-icons/bs";
+import { BiTime } from "react-icons/bi";
 import BigLogo from "../../img/bigLogo.svg";
 import ScrollLogo from "../../img/scroll_icon.svg";
-import {Container} from "../../components/Container";
+import { Container } from "../../components/Container";
 import {
   StyledContentContainer,
   StyledTextContentContainer,
@@ -23,9 +23,9 @@ import {
 } from "./LandingElements";
 const LandingPage = () => {
   return (
-    <Container landing bgColor>
+    <Container vh landing bgColor>
       <StyledContentContainer>
-        <StyledImage src={BigLogo} alt='naprawiamy-pralki-img' />
+        <StyledImage src={BigLogo} alt="naprawiamy-pralki-img" />
         <StyledTextContentContainer>
           <StyledTextWrapper>
             <StyledCompanyNameWrapper>
@@ -41,7 +41,7 @@ const LandingPage = () => {
               </StyledClockLogo>
               <StyledHours>8:00 - 21:00</StyledHours>
             </StyledHoursContainer>
-            <StyledPhoneContainer href='tel:+48603663053'>
+            <StyledPhoneContainer href="tel:+48603663053">
               <StyledPhoneLogo>
                 <BsTelephone />
               </StyledPhoneLogo>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../helpers/theme";
 
 export const AboutUsContentWrap = styled.div`
   width: 90%;
@@ -16,22 +17,22 @@ export const AboutUsContentWrap = styled.div`
   }
 `;
 export const AboutUsTitle = styled.h2`
-  width: 250px;
-  font-size: 4.5em;
+  width: ${(props) => (props.service ? "300px" : "250px")};
+  font-size: 3.8em;
   font-weight: 800;
   text-align: center;
-  line-height: 1em;
+  line-height: 1.1em;
   color: #333;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  padding-top: 0.5em;
+  padding-top: ${(props) => (props.service ? "0" : "0.5em")};
   @media screen and (min-width: 550px) {
-    width: 350px;
+    width: ${(props) => (props.service ? "400px" : "350px")};
   }
   @media screen and (min-width: 960px) {
     width: ${(props) => (props.right ? "fit-content" : "350px")};
     font-size: ${(props) => (props.right ? "2.2em" : "2.2em")};
-    text-align: left;
-    padding-top: 100px;
+    text-align: ${(props) => [props.service ? "center" : "left"]};
+    padding-top: ${props => props.service ? "0" : "100px"};
   }
   @media screen and (min-width: 1280px) {
     width: ${(props) => (props.right ? "fit-content" : "490px")};
@@ -47,7 +48,7 @@ export const AboutUsTitle = styled.h2`
   }
 `;
 export const TitleSpan = styled.span`
-  color: #fff;
+  color: ${(props) => (props.blue ? theme.colors.darkBlue : "#fff")};
 `;
 export const AboutUsText = styled.p`
   font-weight: 700;
@@ -55,7 +56,7 @@ export const AboutUsText = styled.p`
   line-height: 1.3em;
   text-align: center;
   color: #fff;
-  width: 85%;
+  width: 90%;
   @media screen and (min-width: 960px) {
     font-size: 1.5em;
     text-align: left;
