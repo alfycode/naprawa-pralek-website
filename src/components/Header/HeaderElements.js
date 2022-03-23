@@ -38,7 +38,6 @@ export const NavContainer = styled.li`
   justify-content: center;
   gap: 4em;
   list-style: none;
-
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -112,7 +111,7 @@ export const Burger = styled.div`
     position: absolute;
     width: 38px;
     height: 5px;
-    background-color: #333;
+    background-color: ${theme.colors.dark};
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
   }

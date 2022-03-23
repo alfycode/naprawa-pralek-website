@@ -22,7 +22,7 @@ export const AboutUsTitle = styled.h2`
   font-weight: 800;
   text-align: center;
   line-height: 1.1em;
-  color: #333;
+  color: ${theme.colors.dark};
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   padding-top: ${(props) => (props.service ? "0" : "0.5em")};
   @media screen and (min-width: 550px) {

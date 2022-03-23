@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { theme } from "../../helpers/theme";
 export const MobileMenuContainer = styled(motion.nav)`
   background: ${(props) => props.theme.colors.menuLinear};
   height: 100vh;
@@ -25,11 +26,14 @@ export const MobileMenuWrap = styled(motion.ul)`
 `;
 export const NavItem = styled(motion.li)`
   list-style: none;
- 
 `;
 export const StyledLink = styled(Link)`
   font-size: 1.5em;
   letter-spacing: 0.03em;
-  color: #333;
+  color: ${theme.colors.dark};
   cursor: pointer;
+
+  &:active {
+    color: ${theme.colors.darkBlue};
+  }
 `;
