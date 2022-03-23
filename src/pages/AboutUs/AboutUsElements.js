@@ -40,7 +40,7 @@ export const AboutUsTitle = styled.h2`
   }
   @media screen and (min-width: 1600px) {
     width: ${(props) => (props.right ? "fit-content" : "550px")};
-    font-size: 3em;
+    font-size: 2.8em;
   }
   @media screen and (min-width: 1920px) {
     width: ${(props) => (props.right ? "fit-content" : "600px")};
