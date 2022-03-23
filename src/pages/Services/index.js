@@ -16,7 +16,7 @@ import {
 
 const ServicesPage = () => {
   return (
-    <Container bgColor service>
+    <Container bgColor service name="services">
       <ServicesRow>
         <ServiceItem text>
           <AboutUsTitle service>

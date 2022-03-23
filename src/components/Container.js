@@ -4,7 +4,7 @@ export const Container = styled.div`
   position: relative;
   top: 0;
   left: 0;
-  min-height: ${(props) => (props.vh ? "100vh" : "90vh")};
+  min-height: ${(props) => (props.vh ? "100vh" : "95vh")};
   height: fit-content;
   width: 100%;
   background: ${(props) =>

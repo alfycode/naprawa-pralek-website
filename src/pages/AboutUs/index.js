@@ -15,7 +15,7 @@ import {
 } from "./AboutUsElements";
 const AboutUsPage = () => {
   return (
-    <Container vh>
+    <Container vh name="aboutUs">
       <AboutUsContentWrap>
         <AboutUsTitle>
           Dlaczego <TitleSpan>warto nas</TitleSpan> wybrać?

@@ -24,7 +24,7 @@ import {
 const LandingPage = () => {
   return (
     <Container vh landing bgColor>
-      <StyledContentContainer>
+      <StyledContentContainer name="top">
         <StyledImage src={BigLogo} alt="naprawiamy-pralki-img" />
         <StyledTextContentContainer>
           <StyledTextWrapper>

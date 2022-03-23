@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from "react";
-import {AnimatePresence, motion} from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import LogoSrc from "../../img/logoType.svg";
+import { animateScroll as scroll } from "react-scroll";
 import {
   HeaderContainer,
   LogoContainer,
@@ -17,11 +18,6 @@ const Header = () => {
   const setIsOpenHandler = () => {
     setisOpen(!isOpen);
   };
-  const redirectToHomePageHandler = () => {
-    setisOpen(false);
-    // here it we should use react scroll to scroll to home page
-  };
-
   const [scrollTop, setScrollTop] = useState(0);
   const [scrolling, setScrolling] = useState(false);
 
@@ -36,19 +32,44 @@ const Header = () => {
 
   return (
     <HeaderContainer bgColor visible={scrolling}>
-      <LogoContainer onClick={redirectToHomePageHandler}>
-        <LogoType src={LogoSrc} />
+      <LogoContainer
+        spy={true}
+        smooth={true}
+        duration={500}
+        onClick={() => scroll.scrollToTop()}
+      >
+        <LogoType whileHover={{ scale: 1.1 }} src={LogoSrc} />
       </LogoContainer>
       <NavContainer>
-        <NavLink>O firmie</NavLink>
-        <NavLink>Usługi</NavLink>
+        <NavLink
+          spy={true}
+          offset={-80}
+          smooth={true}
+          duration={500}
+          activeClass="active"
+          to="aboutUs"
+        >
+          O firmie
+        </NavLink>
+        <NavLink
+          spy={true}
+          offset={-80}
+          smooth={true}
+          duration={500}
+          activeClass="active"
+          to="services"
+        >
+          Usługi
+        </NavLink>
       </NavContainer>
       <BurgerWrap>
         <BurgerContainer onClick={setIsOpenHandler}>
           <Burger isOpen={isOpen} />
         </BurgerContainer>
       </BurgerWrap>
-      <AnimatePresence>{isOpen && <MobileMenu setIsOpenHandler={setIsOpenHandler} />}</AnimatePresence>
+      <AnimatePresence>
+        {isOpen && <MobileMenu setIsOpenHandler={setIsOpenHandler} />}
+      </AnimatePresence>
     </HeaderContainer>
   );
 };

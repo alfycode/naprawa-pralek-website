@@ -1,5 +1,7 @@
 import styled from "styled-components";
-
+import { Link as LinkS } from "react-scroll";
+import { theme } from "../../helpers/theme";
+import { motion } from "framer-motion";
 export const HeaderContainer = styled.header`
   position: fixed;
   top: 0;
@@ -25,20 +27,23 @@ export const LogoContainer = styled.div`
   align-items: center;
   cursor: pointer;
 `;
-export const LogoType = styled.img`
+export const LogoType = styled(motion.img)`
   height: 40px;
+  &:active {
+    background-color: ${theme.colors.lightBlue};
+  }
 `;
-
 export const NavContainer = styled.li`
   display: flex;
   justify-content: center;
   gap: 4em;
   list-style: none;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
-export const NavLink = styled.a`
+export const NavLink = styled(LinkS)`
   color: ${(props) => props.theme.colors.dark};
   font-size: ${(props) => props.theme.fontSizes.small};
   -webkit-touch-callout: none;
@@ -48,6 +53,32 @@ export const NavLink = styled.a`
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  box-sizing: border-box;
+
+  &:active {
+    color: ${theme.colors.darkBlue};
+  }
+  &:hover {
+    color: #000;
+  }
+  &:after {
+    content: "";
+    height: 3px;
+    display: block;
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    background: ${theme.colors.darkBlue};
+    transition: width 0.2s ease 0s, left 0.2s ease 0s;
+    width: 0;
+  }
+  &.active {
+    color: #000;
+    &:after {
+      width: 100%;
+      left: 0;
+    }
+  }
 `;
 export const BurgerWrap = styled.div``;
 export const BurgerContainer = styled.div`
