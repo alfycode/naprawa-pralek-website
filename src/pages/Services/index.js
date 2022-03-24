@@ -26,6 +26,7 @@ const ServicesPage = () => {
             scale: 1,
             transition: { delay: 0.1, duration: 0.5 },
           }}
+          viewport={{ once: true }}
         >
           <AboutUsTitle service>
             Jakie <TitleSpan blue>usługi </TitleSpan>oferujemy?
@@ -43,6 +44,7 @@ const ServicesPage = () => {
           }}
           whileHover={{ scale: 0.98, rotate: -5 }}
           whileTap={{ scale: 1.02 }}
+          viewport={{ once: true }}
         >
           <ServiceItemIcon src={Phone} />
           <ServiceText>porady telefoniczne</ServiceText>
@@ -60,6 +62,7 @@ const ServicesPage = () => {
           }}
           whileHover={{ scale: 0.98, rotate: -5 }}
           whileTap={{ scale: 1.02 }}
+          viewport={{ once: true }}
         >
           <ServiceItemIcon src={Install} />
           <ServiceText>instalacja nowo zakupionego sprzętu</ServiceText>
@@ -79,6 +82,7 @@ const ServicesPage = () => {
           }}
           whileHover={{ scale: 0.98, rotate: -5 }}
           whileTap={{ scale: 1.02 }}
+          viewport={{ once: true }}
         >
           <ServiceItemIcon src={Book} />
           <ServiceText>doradztwo w zakresie obsługi</ServiceText>
@@ -96,6 +100,7 @@ const ServicesPage = () => {
           }}
           whileHover={{ scale: 0.98, rotate: -5 }}
           whileTap={{ scale: 1.02 }}
+          viewport={{ once: true }}
         >
           <ServiceItemIcon src={Repair} />
           <ServiceText>naprawa pralek wszystkich frim</ServiceText>
@@ -113,6 +118,7 @@ const ServicesPage = () => {
           }}
           whileHover={{ scale: 0.98, rotate: -5 }}
           whileTap={{ scale: 1.02 }}
+          viewport={{ once: true }}
         >
           <ServiceItemIcon src={Diagnose} />
           <ServiceText>diagnoza usterek</ServiceText>
