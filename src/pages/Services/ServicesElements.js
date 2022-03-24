@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../../helpers/theme";
+import { motion } from "framer-motion";
 export const ServicesRow = styled.section`
   background-color: ${theme.colors.whiteLinear};
   width: 100%;
@@ -20,7 +21,7 @@ export const ServicesRow = styled.section`
     gap: 0em;
   }
 `;
-export const ServiceItem = styled.div`
+export const ServiceItem = styled(motion.div)`
   min-width: 180px;
   width: calc(100% - 14em);
   max-width: ${(props) => (props.text ? "180px" : "400px")};
@@ -69,12 +70,11 @@ export const ServiceText = styled.p`
     width: ${(props) => (props.text ? "350px" : "240px")};
   }
 `;
-export const ServiceItemBorder = styled.div`
+export const ServiceItemBorder = styled(motion.div)`
   position: absolute;
   width: 100%;
   height: 100%;
   border: 0.25em dashed ${theme.colors.darkBlue};
-  transform: rotate(-5deg);
 `;
 export const ServiceItemIcon = styled.img`
   min-width: 50px;
