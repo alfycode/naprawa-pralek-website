@@ -26,32 +26,62 @@ const ServicesPage = () => {
             Szalast Z. Naprawa i serwis pralek automatycznych.
           </ServiceText>
         </ServiceItem>
-        <ServiceItem>
+        <ServiceItem
+          whileHover={{ scale: 0.98, rotate: -5 }}
+          whileTap={{ scale: 1.02 }}
+        >
           <ServiceItemIcon src={Phone} />
           <ServiceText>porady telefoniczne</ServiceText>
-          <ServiceItemBorder />
+          <ServiceItemBorder
+            whileHover={{ rotate: 5 }}
+            style={{ rotate: -5 }}
+          />
         </ServiceItem>
-        <ServiceItem>
+        <ServiceItem
+          whileHover={{ scale: 0.98, rotate: -5 }}
+          whileTap={{ scale: 1.02 }}
+        >
           <ServiceItemIcon src={Install} />
           <ServiceText>instalacja nowo zakupionego sprzętu</ServiceText>
-          <ServiceItemBorder />
+          <ServiceItemBorder
+            whileHover={{ rotate: 5 }}
+            style={{ rotate: -5 }}
+          />
         </ServiceItem>
       </ServicesRow>
       <ServicesRow second>
-        <ServiceItem>
+        <ServiceItem
+          whileHover={{ scale: 0.98, rotate: -5 }}
+          whileTap={{ scale: 1.02 }}
+        >
           <ServiceItemIcon src={Book} />
           <ServiceText>doradztwo w zakresie obsługi</ServiceText>
-          <ServiceItemBorder />
+          <ServiceItemBorder
+            whileHover={{ rotate: 5 }}
+            style={{ rotate: -5 }}
+          />
         </ServiceItem>
-        <ServiceItem>
+        <ServiceItem
+          whileHover={{ scale: 0.98, rotate: -5 }}
+          whileTap={{ scale: 1.02 }}
+        >
           <ServiceItemIcon src={Repair} />
           <ServiceText>naprawa pralek wszystkich frim</ServiceText>
-          <ServiceItemBorder />
+          <ServiceItemBorder
+            whileHover={{ rotate: 5 }}
+            style={{ rotate: -5 }}
+          />
         </ServiceItem>
-        <ServiceItem>
+        <ServiceItem
+          whileHover={{ scale: 0.98, rotate: -5 }}
+          whileTap={{ scale: 1.02 }}
+        >
           <ServiceItemIcon src={Diagnose} />
           <ServiceText>diagnoza usterek</ServiceText>
-          <ServiceItemBorder />
+          <ServiceItemBorder
+            whileHover={{ rotate: 5 }}
+            style={{ rotate: -5 }}
+          />
         </ServiceItem>
       </ServicesRow>
     </Container>
