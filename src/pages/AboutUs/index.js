@@ -1,6 +1,9 @@
 import React from "react";
 import "./AboutUsElements";
 import { Container } from "../../components/Container";
+import opinionOne from "../../img/opinionOne.png";
+import opinionTwo from "../../img/opinionTwo.png";
+import opinionThree from "../../img/opinionThree.jpg";
 import {
   AboutUsContentWrap,
   AboutUsTitle,
@@ -33,8 +36,11 @@ const AboutUsPage = () => {
           Opinie naszych <TitleSpan second>klientów</TitleSpan>
         </AboutUsTitle>
         <AboutUsOpinionsWrap>
-          <AboutUsOpinionContainer>
-            <ClientProfilePicture />
+          <AboutUsOpinionContainer
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 1.01 }}
+          >
+            <ClientProfilePicture src={opinionOne} />
             <ClientOpinionTextWrap>
               <ClientNameText>Jan Jacek Gutowski</ClientNameText>
               <ClientOpinionText>
@@ -45,8 +51,11 @@ const AboutUsPage = () => {
               </ClientOpinionText>
             </ClientOpinionTextWrap>
           </AboutUsOpinionContainer>
-          <AboutUsOpinionContainer>
-            <ClientProfilePicture />
+          <AboutUsOpinionContainer
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 1.01 }}
+          >
+            <ClientProfilePicture src={opinionTwo} />
             <ClientOpinionTextWrap>
               <ClientNameText>Monika Zawadzka</ClientNameText>
               <ClientOpinionText>
@@ -56,8 +65,11 @@ const AboutUsPage = () => {
               </ClientOpinionText>
             </ClientOpinionTextWrap>
           </AboutUsOpinionContainer>
-          <AboutUsOpinionContainer>
-            <ClientProfilePicture />
+          <AboutUsOpinionContainer
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 1.01 }}
+          >
+            <ClientProfilePicture src={opinionThree} />
             <ClientOpinionTextWrap>
               <ClientNameText>Piotr Wybraniec</ClientNameText>
               <ClientOpinionText>

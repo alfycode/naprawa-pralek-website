@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../../helpers/theme";
+import { motion } from "framer-motion";
 
 export const AboutUsContentWrap = styled.div`
   width: 90%;
@@ -32,7 +33,7 @@ export const AboutUsTitle = styled.h2`
     width: ${(props) => (props.right ? "fit-content" : "350px")};
     font-size: ${(props) => (props.right ? "2.2em" : "2.2em")};
     text-align: ${(props) => [props.service ? "center" : "left"]};
-    padding-top: ${props => props.service ? "0" : "100px"};
+    padding-top: ${(props) => (props.service ? "0" : "100px")};
   }
   @media screen and (min-width: 1280px) {
     width: ${(props) => (props.right ? "fit-content" : "490px")};
@@ -79,7 +80,7 @@ export const AboutUsOpinionsWrap = styled.div`
     gap: 1em;
   }
 `;
-export const AboutUsOpinionContainer = styled.div`
+export const AboutUsOpinionContainer = styled(motion.div)`
   height: fit-content;
   width: 80%;
   max-width: 872px;
@@ -101,7 +102,7 @@ export const AboutUsOpinionContainer = styled.div`
     padding: 0.8em;
   }
 `;
-export const ClientProfilePicture = styled.div`
+export const ClientProfilePicture = styled.img`
   min-width: 60px;
   width: 30%;
   max-width: 120px;
