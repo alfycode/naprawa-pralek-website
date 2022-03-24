@@ -18,7 +18,15 @@ const ServicesPage = () => {
   return (
     <Container bgColor service name="services">
       <ServicesRow>
-        <ServiceItem text>
+        <ServiceItem
+          text
+          style={{ scale: 0 }}
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+            transition: { delay: 0.1, duration: 0.5 },
+          }}
+        >
           <AboutUsTitle service>
             Jakie <TitleSpan blue>usługi </TitleSpan>oferujemy?
           </AboutUsTitle>
@@ -27,6 +35,12 @@ const ServicesPage = () => {
           </ServiceText>
         </ServiceItem>
         <ServiceItem
+          style={{ scale: 0 }}
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+            transition: { delay: 0.2, duration: 0.5 },
+          }}
           whileHover={{ scale: 0.98, rotate: -5 }}
           whileTap={{ scale: 1.02 }}
         >
@@ -38,6 +52,12 @@ const ServicesPage = () => {
           />
         </ServiceItem>
         <ServiceItem
+          style={{ scale: 0 }}
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+            transition: { delay: 0.3, duration: 0.5 },
+          }}
           whileHover={{ scale: 0.98, rotate: -5 }}
           whileTap={{ scale: 1.02 }}
         >
@@ -51,6 +71,12 @@ const ServicesPage = () => {
       </ServicesRow>
       <ServicesRow second>
         <ServiceItem
+          style={{ scale: 0 }}
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+            transition: { delay: 0.4, duration: 0.5 },
+          }}
           whileHover={{ scale: 0.98, rotate: -5 }}
           whileTap={{ scale: 1.02 }}
         >
@@ -62,6 +88,12 @@ const ServicesPage = () => {
           />
         </ServiceItem>
         <ServiceItem
+          style={{ scale: 0 }}
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+            transition: { delay: 0.5, duration: 0.5 },
+          }}
           whileHover={{ scale: 0.98, rotate: -5 }}
           whileTap={{ scale: 1.02 }}
         >
@@ -73,6 +105,12 @@ const ServicesPage = () => {
           />
         </ServiceItem>
         <ServiceItem
+          style={{ scale: 0 }}
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+            transition: { delay: 0.6, duration: 0.5 },
+          }}
           whileHover={{ scale: 0.98, rotate: -5 }}
           whileTap={{ scale: 1.02 }}
         >

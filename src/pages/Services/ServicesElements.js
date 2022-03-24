@@ -12,7 +12,7 @@ export const ServicesRow = styled.section`
   gap: 6em;
   padding: 3em 0;
   flex-wrap: nowrap;
-  overflow-x: hidden;
+  overflow: hidden;
   @media screen and (min-width: 960px) {
     flex-direction: ${(props) => (props.second ? "row" : "row-reverse")};
     width: 100%;
@@ -22,6 +22,7 @@ export const ServicesRow = styled.section`
   }
 `;
 export const ServiceItem = styled(motion.div)`
+  opacity: 0;
   min-width: 180px;
   width: calc(100% - 14em);
   max-width: ${(props) => (props.text ? "180px" : "400px")};
@@ -34,7 +35,6 @@ export const ServiceItem = styled(motion.div)`
   justify-content: center;
   align-items: center;
   margin: ${(props) => (props.text ? "1em 0 -2em 0" : "0")};
-
   @media screen and (min-width: 960px) {
     max-width: ${(props) => (props.text ? "250px" : "250px")};
     margin: 0;
