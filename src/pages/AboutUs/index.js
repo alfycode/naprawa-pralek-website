@@ -37,8 +37,11 @@ const AboutUsPage = () => {
         </AboutUsTitle>
         <AboutUsOpinionsWrap>
           <AboutUsOpinionContainer
+            style={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { delay: 0.2 } }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 1.01 }}
+            viewport={{ once: true }}
           >
             <ClientProfilePicture src={opinionOne} />
             <ClientOpinionTextWrap>
@@ -52,8 +55,11 @@ const AboutUsPage = () => {
             </ClientOpinionTextWrap>
           </AboutUsOpinionContainer>
           <AboutUsOpinionContainer
+            style={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { delay: 0.3 } }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 1.01 }}
+            viewport={{ once: true }}
           >
             <ClientProfilePicture src={opinionTwo} />
             <ClientOpinionTextWrap>
@@ -66,8 +72,11 @@ const AboutUsPage = () => {
             </ClientOpinionTextWrap>
           </AboutUsOpinionContainer>
           <AboutUsOpinionContainer
+            style={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { delay: 0.4 } }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 1.01 }}
+            viewport={{ once: true }}
           >
             <ClientProfilePicture src={opinionThree} />
             <ClientOpinionTextWrap>

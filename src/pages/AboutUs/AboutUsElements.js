@@ -17,7 +17,7 @@ export const AboutUsContentWrap = styled.div`
     width: ${(props) => (props.right ? "50%" : "50%")};
   }
 `;
-export const AboutUsTitle = styled.h2`
+export const AboutUsTitle = styled(motion.h2)`
   width: ${(props) => (props.service ? "300px" : "250px")};
   font-size: 3.8em;
   font-weight: 800;
@@ -51,7 +51,7 @@ export const AboutUsTitle = styled.h2`
 export const TitleSpan = styled.span`
   color: ${(props) => (props.blue ? theme.colors.darkBlue : "#fff")};
 `;
-export const AboutUsText = styled.p`
+export const AboutUsText = styled(motion.p)`
   font-weight: 700;
   font-size: 2.4em;
   line-height: 1.3em;
