@@ -23,7 +23,11 @@ const AboutUsPage = () => {
         <AboutUsTitle>
           Dlaczego <TitleSpan>warto nas</TitleSpan> wybrać?
         </AboutUsTitle>
-        <AboutUsText>
+        <AboutUsText
+          style={{ opacity: 0 }}
+          whileInView={{ opacity: 1, transition: { duration: 1, delay: 0.2 } }}
+          viewport={{ once: true }}
+        >
           Zajmuję się naprawą pralek wszystkich typów już od 25 lat. 23-letnie
           doświadczenie, najwyższa jakość usług w zakresie napraw pralek.
           Naprawy wykonuję na terenie Lublina i dalszych okolic, w domu klienta.
