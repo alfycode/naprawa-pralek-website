@@ -16,6 +16,7 @@ export const Container = styled.div`
   justify-content: center;
   font-size: 10px;
   flex-wrap: wrap;
+  overflow: hidden;
   @media screen and (min-width: 550px) {
     font-size: 12px;
   }
