@@ -42,7 +42,7 @@ const AboutUsPage = () => {
         <AboutUsOpinionsWrap>
           <AboutUsOpinionContainer
             style={{ y: -100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1, transition: { delay: 0.2 } }}
+            whileInView={{ y: 0, opacity: 1, transition: { delay: 0.3 } }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 1.01 }}
             viewport={{ once: true }}
@@ -60,7 +60,7 @@ const AboutUsPage = () => {
           </AboutUsOpinionContainer>
           <AboutUsOpinionContainer
             style={{ y: -100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1, transition: { delay: 0.3 } }}
+            whileInView={{ y: 0, opacity: 1, transition: { delay: 0.5 } }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 1.01 }}
             viewport={{ once: true }}
@@ -77,7 +77,7 @@ const AboutUsPage = () => {
           </AboutUsOpinionContainer>
           <AboutUsOpinionContainer
             style={{ y: -100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1, transition: { delay: 0.4 } }}
+            whileInView={{ y: 0, opacity: 1, transition: { delay: 0.7 } }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 1.01 }}
             viewport={{ once: true }}

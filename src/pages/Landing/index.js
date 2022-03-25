@@ -20,6 +20,7 @@ import {
   StyledPhoneContainer,
   StyledPhoneLogo,
   StyledPhone,
+  ScrollIconWrap,
 } from "./LandingElements";
 const LandingPage = () => {
   return (
@@ -41,7 +42,10 @@ const LandingPage = () => {
               </StyledClockLogo>
               <StyledHours>8:00 - 21:00</StyledHours>
             </StyledHoursContainer>
-            <StyledPhoneContainer href="tel:+48603663053">
+            <StyledPhoneContainer
+              href="tel:+48603663053"
+              whileHover={{ scale: 0.97 }}
+            >
               <StyledPhoneLogo>
                 <BsTelephone />
               </StyledPhoneLogo>
@@ -50,7 +54,19 @@ const LandingPage = () => {
           </StyledPhoneHoursContainer>
         </StyledTextContentContainer>
       </StyledContentContainer>
-      <StyledScrollIcon src={ScrollLogo}></StyledScrollIcon>
+      <ScrollIconWrap
+        animate={{
+          y: -50,
+          opacity: [1, 0.5],
+          transition: {
+            repeat: Infinity,
+            repeatType: "mirror",
+            duration: 1,
+          },
+        }}
+      >
+        <StyledScrollIcon src={ScrollLogo} />
+      </ScrollIconWrap>
     </Container>
   );
 };
