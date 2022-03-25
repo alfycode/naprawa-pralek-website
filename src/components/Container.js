@@ -24,9 +24,9 @@ export const Container = styled.div`
     font-size: 14px;
   }
   @media screen and (min-width: 960px) {
-    flex-direction: ${(props) => (props.service ? "column" : "row")};
+    flex-direction: ${(props) => (props.serv ? "column" : "row")};
     align-items: ${(props) => (props.landing ? "center" : "flex-start")};
-    justify-content: ${(props) => (props.service ? "flex-start" : "center")};
+    justify-content: ${(props) => (props.serv ? "flex-start" : "center")};
     font-size: 16px;
   }
   @media screen and (min-width: 1280px) {

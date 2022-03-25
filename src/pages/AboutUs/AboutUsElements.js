@@ -18,22 +18,22 @@ export const AboutUsContentWrap = styled.div`
   }
 `;
 export const AboutUsTitle = styled(motion.h2)`
-  width: ${(props) => (props.service ? "300px" : "250px")};
+  width: ${(props) => (props.serv ? "300px" : "250px")};
   font-size: 3.8em;
   font-weight: 800;
   text-align: center;
   line-height: 1.1em;
   color: ${theme.colors.dark};
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  padding-top: ${(props) => (props.service ? "0" : "0.5em")};
+  padding-top: ${(props) => (props.serv ? "0" : "0.5em")};
   @media screen and (min-width: 550px) {
-    width: ${(props) => (props.service ? "400px" : "350px")};
+    width: ${(props) => (props.serv ? "400px" : "350px")};
   }
   @media screen and (min-width: 960px) {
     width: ${(props) => (props.right ? "fit-content" : "350px")};
-    font-size: ${(props) => (props.right ? "2.2em" : "2.2em")};
-    text-align: ${(props) => [props.service ? "center" : "left"]};
-    padding-top: ${(props) => (props.service ? "0" : "100px")};
+    font-size: 2.2em;
+    text-align: ${(props) => [props.serv ? "center" : "left"]};
+    padding-top: ${(props) => (props.serv ? "0" : "100px")};
   }
   @media screen and (min-width: 1280px) {
     width: ${(props) => (props.right ? "fit-content" : "490px")};

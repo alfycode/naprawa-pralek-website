@@ -16,10 +16,10 @@ import {
 
 const ServicesPage = () => {
   return (
-    <Container bgColor service name="services">
+    <Container bgColor serv="true" name="services">
       <ServicesRow>
         <ServiceItem
-          text
+          text="true"
           style={{ scale: 0 }}
           whileInView={{
             opacity: 1,
@@ -28,10 +28,10 @@ const ServicesPage = () => {
           }}
           viewport={{ once: true }}
         >
-          <AboutUsTitle service>
+          <AboutUsTitle serv="true">
             Jakie <TitleSpan blue>usługi </TitleSpan>oferujemy?
           </AboutUsTitle>
-          <ServiceText text>
+          <ServiceText text="true">
             Szalast Z. Naprawa i serwis pralek automatycznych.
           </ServiceText>
         </ServiceItem>
