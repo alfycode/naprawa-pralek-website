@@ -33,6 +33,7 @@ const Header = () => {
   return (
     <HeaderContainer bgColor visible={scrolling}>
       <LogoContainer
+      className="link"
         spy={true}
         smooth={true}
         duration={500}
@@ -42,6 +43,7 @@ const Header = () => {
       </LogoContainer>
       <NavContainer>
         <NavLink
+          className="link"
           spy={true}
           offset={-80}
           smooth={true}
@@ -52,6 +54,7 @@ const Header = () => {
           O firmie
         </NavLink>
         <NavLink
+          className="link"
           spy={true}
           offset={-80}
           smooth={true}
