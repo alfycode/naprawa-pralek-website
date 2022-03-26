@@ -17,7 +17,6 @@ const Cursor = () => {
   useEffect(() => {
     document.addEventListener("mousemove", (e) => {
       const { clientX, clientY } = e;
-
       const mouseX = clientX;
       const mouseY = clientY;
 

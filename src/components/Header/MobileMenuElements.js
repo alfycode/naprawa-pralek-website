@@ -32,7 +32,7 @@ export const StyledLink = styled(Link)`
   letter-spacing: 0.03em;
   color: ${theme.colors.dark};
   cursor: pointer;
-
+  
   &:active {
     color: ${theme.colors.darkBlue};
   }

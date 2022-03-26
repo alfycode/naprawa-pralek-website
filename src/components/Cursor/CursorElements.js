@@ -16,7 +16,6 @@ export const CustomCursor = styled.div`
   transition: 0.2s linear;
   transition-property: ${(props) =>
     props.second ? "all" : "border, background-color"};
-
   @media screen and (min-width: 769px) {
     display: block;
   }

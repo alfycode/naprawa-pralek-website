@@ -92,7 +92,6 @@ export const StyledPhoneContainer = styled(motion.a)`
   color: inherit;
   text-decoration: inherit;
   padding: 0.6em 1.2em;
-
   @media screen and (min-width: 768px) {
     background-color: transparent;
     border: none;
@@ -100,14 +99,12 @@ export const StyledPhoneContainer = styled(motion.a)`
     padding: 0.2em 1.2em;
   }
 `;
-
 export const StyledHours = styled.div`
   white-space: nowrap;
 `;
 export const StyledPhone = styled.div`
   white-space: nowrap;
 `;
-
 export const StyledPhoneLogo = styled.div`
   display: flex;
   margin-right: 0.2em;
