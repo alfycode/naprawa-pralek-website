@@ -65,7 +65,7 @@ const Header = () => {
           Usługi
         </NavLink>
       </NavContainer>
-      <BurgerWrap>
+      <BurgerWrap className="link">
         <BurgerContainer onClick={setIsOpenHandler}>
           <Burger isOpen={isOpen} />
         </BurgerContainer>

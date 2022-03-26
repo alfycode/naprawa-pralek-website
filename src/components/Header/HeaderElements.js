@@ -25,7 +25,7 @@ export const HeaderContainer = styled.header`
 export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
-  cursor: pointer;
+  cursor: none;
 `;
 export const LogoType = styled(motion.img)`
   height: 40px;
@@ -86,7 +86,7 @@ export const BurgerContainer = styled.div`
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   z-index: 3;
-  cursor: pointer;
+  cursor: none;
   @media screen and (max-width: 768px) {
     display: flex;
     justify-content: center;

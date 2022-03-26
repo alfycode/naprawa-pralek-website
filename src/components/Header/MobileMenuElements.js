@@ -31,8 +31,8 @@ export const StyledLink = styled(Link)`
   font-size: 1.5em;
   letter-spacing: 0.03em;
   color: ${theme.colors.dark};
-  cursor: pointer;
-  
+  cursor: none;
+
   &:active {
     color: ${theme.colors.darkBlue};
   }
