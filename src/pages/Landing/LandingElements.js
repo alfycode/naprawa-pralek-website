@@ -88,7 +88,7 @@ export const StyledPhoneContainer = styled(motion.a)`
   border-radius: 100px;
   line-height: 120%;
   font-weight: 500;
-  cursor: pointer;
+  cursor: none;
   color: inherit;
   text-decoration: inherit;
   padding: 0.6em 1.2em;
@@ -96,7 +96,7 @@ export const StyledPhoneContainer = styled(motion.a)`
   @media screen and (min-width: 768px) {
     background-color: transparent;
     border: none;
-    cursor: pointer;
+    cursor: none;
     padding: 0.2em 1.2em;
   }
 `;

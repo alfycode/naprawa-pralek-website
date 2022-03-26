@@ -14,7 +14,7 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 2em;
-  z-index: 999;
+  z-index: 998;
   overflow: hidden;
   background: ${(props) =>
     props.visible ? props.theme.colors.whiteLinear : "transparent"};
@@ -51,9 +51,7 @@ export const NavLink = styled(LinkS)`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: pointer;
   box-sizing: border-box;
-
   &:active {
     color: ${theme.colors.darkBlue};
   }

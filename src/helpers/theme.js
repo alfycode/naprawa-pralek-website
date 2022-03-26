@@ -23,10 +23,12 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    cursor: none;
   }
   body {
     font-size: 20px;
     font-family: ${({ theme }) => theme.fonts}, sans-serif;
     src:url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+    cursor: none;
   }
 `;

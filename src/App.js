@@ -6,11 +6,12 @@ import Header from "./components/Header";
 import Landing from "./pages/Landing";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
-
+import Cursor from "./components/Cursor";
 const App = () => {
   return (
     <Theme>
       <PagesContainer>
+        <Cursor />
         <Header />
         <Landing />
         <AboutUs />
