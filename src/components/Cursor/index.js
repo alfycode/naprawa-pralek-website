@@ -74,12 +74,12 @@ const Cursor = () => {
     navLinks.forEach((link) => {
       link.addEventListener("mouseover", () => {
         mainCursor.style.borderColor = `${theme.colors.darkBlue}`;
-        mainCursor.style.backgroundColor = `${theme.colors.lightBlue}`;
+        mainCursor.style.backgroundColor = `${theme.colors.darkBlue}`;
         secondaryCursor.style.borderColor = `${theme.colors.darkBlue}`;
       });
       link.addEventListener("mouseleave", () => {
         mainCursor.style.borderColor = `${theme.colors.dark}`;
-        mainCursor.style.backgroundColor = "transparent";
+        mainCursor.style.backgroundColor = `${theme.colors.dark}`;
         secondaryCursor.style.borderColor = `${theme.colors.dark}`;
       });
       link.addEventListener("mousedown", () => {
@@ -87,7 +87,7 @@ const Cursor = () => {
         secondaryCursor.style.backgroundColor = `${theme.colors.lightBlue}`;
       });
       link.addEventListener("mouseup", () => {
-        mainCursor.style.backgroundColor = `${theme.colors.lightBlue}`;
+        mainCursor.style.backgroundColor = `${theme.colors.darkBlue}`;
         secondaryCursor.style.backgroundColor = `transparent`;
       });
     });
@@ -101,3 +101,4 @@ const Cursor = () => {
 };
 
 export default Cursor;
+

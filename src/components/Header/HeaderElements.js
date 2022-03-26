@@ -14,7 +14,7 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 2em;
-  z-index: 998;
+  z-index: 995;
   overflow: hidden;
   background: ${(props) =>
     props.visible ? props.theme.colors.whiteLinear : "transparent"};
