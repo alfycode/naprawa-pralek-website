@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../../helpers/theme";
 export const CustomCursor = styled.div`
+  display: none;
   width: ${(props) => (props.second ? "3.2em" : "1.5em")};
   height: ${(props) => (props.second ? "3.2em" : "1.5em")};
   border-radius: 50%;
@@ -16,4 +17,8 @@ export const CustomCursor = styled.div`
   transition: 0.2s linear;
   transition-property: ${(props) =>
     props.second ? "all" : "border, background-color"};
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 `;
