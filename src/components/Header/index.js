@@ -33,39 +33,44 @@ const Header = () => {
   return (
     <HeaderContainer bgColor visible={scrolling}>
       <LogoContainer
-      className="link"
+        className='link'
         spy={true}
         smooth={true}
         duration={500}
-        onClick={() => scroll.scrollToTop()}
+        onClick={() => {
+          scroll.scrollToTop();
+          {
+            if (isOpen) setIsOpenHandler();
+          }
+        }}
       >
         <LogoType whileHover={{ scale: 1.1 }} src={LogoSrc} />
       </LogoContainer>
       <NavContainer>
         <NavLink
-          className="link"
+          className='link'
           spy={true}
           offset={-80}
           smooth={true}
           duration={500}
-          activeClass="active"
-          to="aboutUs"
+          activeClass='active'
+          to='aboutUs'
         >
           O firmie
         </NavLink>
         <NavLink
-          className="link"
+          className='link'
           spy={true}
           offset={-80}
           smooth={true}
           duration={500}
-          activeClass="active"
-          to="services"
+          activeClass='active'
+          to='services'
         >
           Usługi
         </NavLink>
       </NavContainer>
-      <BurgerWrap className="link">
+      <BurgerWrap className='link'>
         <BurgerContainer onClick={setIsOpenHandler}>
           <Burger isOpen={isOpen} />
         </BurgerContainer>
