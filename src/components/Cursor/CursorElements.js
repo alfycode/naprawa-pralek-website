@@ -14,7 +14,7 @@ export const CustomCursor = styled.div`
   transform: translate3d(0, 0, 0);
   position: fixed;
   z-index: ${(props) => (props.second ? "998" : "999")};
-  transition: 0.2s linear;
+  transition: 0.1s linear;
   transition-property: ${(props) =>
     props.second ? "all" : "border, background-color"};
 

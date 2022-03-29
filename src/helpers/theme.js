@@ -7,8 +7,8 @@ export const theme = {
     menuLinear: "linear-gradient(40deg, #9FD9FF 0%, #fff 100%)",
     lightBlue: "rgba(79, 170, 231, 0.25)",
     darkBlue: "#4FAAE7",
-    bubbleWhite: "rgba(255, 255, 255, 0.75)",
-    bubbleBlue: "rgba(79, 170, 231, 0.75)",
+    bubbleWhite: "rgba(255, 255, 255, 0.2)",
+    bubbleBlue: "rgba(79, 170, 231, 0.2)",
   },
   fonts: ["Poppins", "sans-serif"],
   fontSizes: {

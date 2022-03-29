@@ -13,7 +13,8 @@ import {
   ServiceItemBorder,
   ServiceItemIcon,
 } from "./ServicesElements";
-
+import { Bubble } from "../Landing/LandingElements";
+import { theme } from "../../helpers/theme";
 const ServicesPage = () => {
   return (
     <Container bgColor serv="true" name="services">
@@ -128,6 +129,14 @@ const ServicesPage = () => {
           />
         </ServiceItem>
       </ServicesRow>
+      <Bubble service bgc={theme.colors.bubbleBlue} top={"5%"} left={"85%"} />
+      <Bubble
+        second
+        service
+        bgc={theme.colors.bubbleBlue}
+        top={"75%"}
+        left={"-5%"}
+      />
     </Container>
   );
 };

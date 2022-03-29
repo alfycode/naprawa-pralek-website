@@ -4,6 +4,7 @@ import { BiTime } from "react-icons/bi";
 import BigLogo from "../../img/bigLogo.svg";
 import ScrollLogo from "../../img/scroll_icon.svg";
 import { Container } from "../../components/Container";
+import { theme } from "../../helpers/theme";
 import {
   StyledContentContainer,
   StyledTextContentContainer,
@@ -21,6 +22,8 @@ import {
   StyledPhoneLogo,
   StyledPhone,
   ScrollIconWrap,
+  Bubble,
+  BubbleWrap,
 } from "./LandingElements";
 const LandingPage = () => {
   return (
@@ -67,6 +70,12 @@ const LandingPage = () => {
       >
         <StyledScrollIcon src={ScrollLogo} />
       </ScrollIconWrap>
+      <BubbleWrap>
+        <Bubble landing bgc={theme.colors.darkBlue} />
+      </BubbleWrap>
+      <BubbleWrap second>
+        <Bubble second landing bgc={theme.colors.darkBlue} />
+      </BubbleWrap>
     </Container>
   );
 };

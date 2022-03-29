@@ -35,6 +35,7 @@ export const ServiceItem = styled(motion.div)`
   justify-content: center;
   align-items: center;
   margin: ${(props) => (props.text ? "1em 0 -2em 0" : "0")};
+  z-index: 10;
   @media screen and (min-width: 960px) {
     max-width: ${(props) => (props.text ? "250px" : "250px")};
     margin: 0;
