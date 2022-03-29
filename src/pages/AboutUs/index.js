@@ -16,6 +16,8 @@ import {
   ClientOpinionTextWrap,
   ClientOpinionText,
 } from "./AboutUsElements";
+import { Bubble } from "../Landing/LandingElements";
+import { theme } from "../../helpers/theme";
 const AboutUsPage = () => {
   return (
     <Container vh name="aboutUs">
@@ -94,6 +96,14 @@ const AboutUsPage = () => {
           </AboutUsOpinionContainer>
         </AboutUsOpinionsWrap>
       </AboutUsContentWrap>
+      <Bubble white bgc={theme.colors.bubbleWhite} top={"-10%"} left={"-5%"} />
+      <Bubble
+        white
+        second
+        bgc={theme.colors.bubbleWhite}
+        top={"52%"}
+        left={"80%"}
+      />
     </Container>
   );
 };

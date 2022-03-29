@@ -10,6 +10,7 @@ export const AboutUsContentWrap = styled.div`
   align-items: center;
   gap: 3em;
   margin-bottom: 5em;
+  z-index: 10;
   @media screen and (min-width: 768px) {
     width: 80%;
   }
@@ -72,7 +73,6 @@ export const AboutUsOpinionsWrap = styled.div`
   justify-content: center;
   align-items: center;
   gap: 3em;
-
   @media screen and (min-width: 768px) {
     width: 95%;
   }
