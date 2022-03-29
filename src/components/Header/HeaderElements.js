@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 import { theme } from "../../helpers/theme";
 import { motion } from "framer-motion";
+import { ThemeContext } from "styled-components";
 export const HeaderContainer = styled.header`
   position: fixed;
   top: 0;
@@ -16,11 +17,10 @@ export const HeaderContainer = styled.header`
   padding: 0 2em;
   z-index: 995;
   overflow: hidden;
-  background: ${(props) =>
-    props.visible ? props.theme.colors.whiteLinear : "transparent"};
+  background-color: ${(props) => (props.visible ? "#dedeed" : "transparent")};
   box-shadow: ${(props) =>
     props.visible === true ? "0px 1px 15px -10px #333" : "none"};
-  transition: all 0.5s ease;
+  transition: all 0.2s ease-in-out;
 `;
 export const LogoContainer = styled.div`
   display: flex;
