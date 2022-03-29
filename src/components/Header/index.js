@@ -18,22 +18,22 @@ const Header = () => {
   const setIsOpenHandler = () => {
     setisOpen(!isOpen);
   };
-  const [scrollTop, setScrollTop] = useState(0);
-  const [scrolling, setScrolling] = useState(false);
-
+  const [scrollNav, setScrollNav] = useState(false);
+  const changeNav = () => {
+    if (window.scrollY >= 60) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
   useEffect(() => {
-    const onScroll = (e) => {
-      setScrollTop(e.target.documentElement.scrollTop);
-      setScrolling(scrollTop > 10);
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [scrollTop]);
+    window.addEventListener("scroll", changeNav);
+  }, []);
 
   return (
-    <HeaderContainer bgColor visible={scrolling}>
+    <HeaderContainer bgColor visible={scrollNav}>
       <LogoContainer
-        className='link'
+        className="link"
         spy={true}
         smooth={true}
         duration={500}
@@ -48,29 +48,29 @@ const Header = () => {
       </LogoContainer>
       <NavContainer>
         <NavLink
-          className='link'
+          className="link"
           spy={true}
           offset={-80}
           smooth={true}
           duration={500}
-          activeClass='active'
-          to='aboutUs'
+          activeClass="active"
+          to="aboutUs"
         >
           O firmie
         </NavLink>
         <NavLink
-          className='link'
+          className="link"
           spy={true}
           offset={-80}
           smooth={true}
           duration={500}
-          activeClass='active'
-          to='services'
+          activeClass="active"
+          to="services"
         >
           Usługi
         </NavLink>
       </NavContainer>
-      <BurgerWrap className='link'>
+      <BurgerWrap className="link">
         <BurgerContainer onClick={setIsOpenHandler}>
           <Burger isOpen={isOpen} />
         </BurgerContainer>
