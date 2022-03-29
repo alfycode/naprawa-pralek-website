@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { theme } from "../../helpers/theme";
 import { motion } from "framer-motion";
-
+import { keyframes } from "styled-components";
 export const StyledContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transform: translateY(-13.5%);
+  z-index: 10;
 `;
 export const StyledTextContentContainer = styled.div`
   display: flex;
@@ -118,4 +119,73 @@ export const ScrollIconWrap = styled(motion.div)`
   width: 40px;
   position: absolute;
   bottom: 10px;
+`;
+const bubbleAnimationLeft = keyframes`
+0% {
+  top: 10%;
+  left: 2%;
+}
+20% {
+  top: 20%;
+  left: 7%;
+}
+40% {
+  top: 30%;
+  left: 2%;
+}
+60% {
+  top: 25%;
+  left: 5%;
+}
+80% {
+  top: 16%;
+  left: 10%;
+}
+100% {
+  top:10%;
+  left: 12%;
+}
+`;
+
+const bubbleAnimationRight = keyframes`
+0% {
+  top: 50%;
+  left: 75%;
+}
+20% {
+  top: 45%;
+  left: 77%;
+}
+40% {
+  top: 38%;
+  left: 80%;
+}
+60% {
+  top: 40%;
+  left: 76%;
+}
+80% {
+  top: 46%;
+  left: 80%;
+}
+100% {
+  top: 45%;
+  left: 74%;
+}
+`;
+export const Bubble = styled.div`
+  width: ${(props) => (props.second ? "16em" : "20em")};
+  height: ${(props) => (props.second ? "19em" : "20em")};
+  position: absolute;
+  background-color: ${(props) =>
+    props.white ? theme.colors.bubbleWhite : theme.colors.darkBlue};
+  border-radius: ${(props) => (props.second ? "30%" : "50%")};
+  z-index: 1;
+  filter: ${(props) => (props.second ? "blur(8em)" : "blur(9em)")};
+  animation-name: ${(props) =>
+    props.second ? bubbleAnimationRight : bubbleAnimationLeft};
+  animation-duration: ${props => props.second ? "10s" : "7s"};
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: both;
 `;

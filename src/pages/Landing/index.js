@@ -21,6 +21,7 @@ import {
   StyledPhoneLogo,
   StyledPhone,
   ScrollIconWrap,
+  Bubble,
 } from "./LandingElements";
 const LandingPage = () => {
   return (
@@ -67,6 +68,8 @@ const LandingPage = () => {
       >
         <StyledScrollIcon src={ScrollLogo} />
       </ScrollIconWrap>
+      <Bubble />
+      <Bubble second />
     </Container>
   );
 };
