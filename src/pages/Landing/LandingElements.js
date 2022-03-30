@@ -10,7 +10,7 @@ export const StyledContentContainer = styled.div`
   transform: translateY(-13.5%);
   z-index: 10;
 `;
-export const StyledTextContentContainer = styled.div`
+export const StyledTextContentContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,10 +20,15 @@ export const StyledTextContentContainer = styled.div`
     flex-direction: column-reverse;
   }
 `;
-export const StyledImage = styled.img`
-  max-width: 80vw;
-  max-height: 40vh;
+export const StyledImage = styled.div`
   margin-bottom: 20px;
+  font-size: 1.2em;
+  @media screen and (min-width: 550px) {
+    font-size: 1.4em;
+  }
+  @media screen and (min-width: 960px) {
+    font-size: 1em;
+  }
 `;
 export const StyledScrollIcon = styled.img`
   width: 100%;

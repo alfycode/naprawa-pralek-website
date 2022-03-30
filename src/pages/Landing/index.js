@@ -4,6 +4,7 @@ import { BiTime } from "react-icons/bi";
 import BigLogo from "../../img/bigLogo.svg";
 import ScrollLogo from "../../img/scroll_icon.svg";
 import { Container } from "../../components/Container";
+import Logo from "./logo";
 import { theme } from "../../helpers/theme";
 import {
   StyledContentContainer,
@@ -29,8 +30,12 @@ const LandingPage = () => {
   return (
     <Container vh landing bgColor>
       <StyledContentContainer name="top">
-        <StyledImage src={BigLogo} alt="naprawiamy-pralki-img" />
-        <StyledTextContentContainer>
+        <Logo />
+        <StyledTextContentContainer
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 2 }}
+        >
           <StyledTextWrapper>
             <StyledCompanyNameWrapper>
               <StyledTitle>Naprawa</StyledTitle>
