@@ -4,7 +4,7 @@ export const Container = styled.div`
   position: relative;
   top: 0;
   left: 0;
-  min-height: ${(props) => (props.vh ? "100vh" : "95vh")};
+  min-height: ${(props) => (props.vh ? "100vh" : "93vh")};
   height: fit-content;
   width: 100%;
   background: ${(props) =>
@@ -37,5 +37,8 @@ export const Container = styled.div`
   }
   @media screen and (min-width: 1920px) {
     font-size: 22px;
+  }
+  @media screen and (min-width: 2300px) {
+    font-size: 27px;
   }
 `;

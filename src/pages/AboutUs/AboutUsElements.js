@@ -48,6 +48,10 @@ export const AboutUsTitle = styled(motion.h2)`
     width: ${(props) => (props.right ? "fit-content" : "600px")};
     font-size: 3em;
   }
+  @media screen and (min-width: 2300px) {
+    width: ${(props) => (props.right ? "fit-content" : "700px")};
+    font-size: 3em;
+  }
 `;
 export const TitleSpan = styled.span`
   color: ${(props) => (props.blue ? theme.colors.darkBlue : "#fff")};
