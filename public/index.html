@@ -36,11 +36,13 @@
     <title>Naprawa Pralek i AGD Zenon Szalast</title>
   </head>
   <body>
+    <script>
+      window.passiveSupport = { debug: true, events: ["touchstart"] };
+    </script>
     <script
       type="text/javascript"
-      src="https://unpkg.com/default-passive-events"
+      src="node_modules/passive-events-support/dist/main.js"
     ></script>
-
     <!-- Messenger Wtyczka czatu Code -->
     <div id="fb-root"></div>
 
