@@ -40,8 +40,10 @@ const bodyRightVariants = {
 const washerVariants = {
   hidden: {
     pathLength: 0,
+    opacity: 0,
   },
   visible: {
+    opacity: 1,
     pathLength: 1,
     transition: {
       duration: 1,
@@ -53,8 +55,10 @@ const washerVariants = {
 const circleSmallerVariant = {
   hidden: {
     pathLength: 0,
+    opacity: 0,
   },
   visible: {
+    opacity: 1,
     pathLength: 1,
     transition: {
       duration: 0.3,
@@ -66,8 +70,10 @@ const circleSmallerVariant = {
 const circleBiggerVariant = {
   hidden: {
     pathLength: 0,
+    opacity: 0,
   },
   visible: {
+    opacity: 1,
     pathLength: 1,
     transition: {
       duration: 0.5,
@@ -79,8 +85,10 @@ const circleBiggerVariant = {
 const lineVariant = {
   hidden: {
     pathLength: 0,
+    opacity: 0,
   },
   visible: {
+    opacity: 1,
     pathLength: 1,
     transition: {
       duration: 0.5,
@@ -92,8 +100,10 @@ const lineVariant = {
 const ellipseVariants = {
   hidden: {
     scale: 0,
+    opacity: 0,
   },
   visible: {
+    opacity: 1,
     scale: 1,
     transition: {
       duration: 0.5,
