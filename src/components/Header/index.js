@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import LogoSrc from "../../img/logoType.svg";
+import LogoSrc from "../..";
 import { animateScroll as scroll } from "react-scroll";
 import {
   HeaderContainer,
@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <HeaderContainer bgColor visible={scrollNav}>
       <LogoContainer
-        className="link"
+        className='link'
         spy={true}
         smooth={true}
         duration={500}
@@ -44,33 +44,33 @@ const Header = () => {
           }
         }}
       >
-        <LogoType whileHover={{ scale: 1.1 }} src={LogoSrc} />
+        <LogoType whileHover={{ scale: 1.1 }} src={"/img/logoType.svg"} />
       </LogoContainer>
       <NavContainer>
         <NavLink
-          className="link"
+          className='link'
           spy={true}
           offset={-80}
           smooth={true}
           duration={500}
-          activeClass="active"
-          to="aboutUs"
+          activeClass='active'
+          to='aboutUs'
         >
           O firmie
         </NavLink>
         <NavLink
-          className="link"
+          className='link'
           spy={true}
           offset={-80}
           smooth={true}
           duration={500}
-          activeClass="active"
-          to="services"
+          activeClass='active'
+          to='services'
         >
           Usługi
         </NavLink>
       </NavContainer>
-      <BurgerWrap className="link">
+      <BurgerWrap className='link'>
         <BurgerContainer onClick={setIsOpenHandler}>
           <Burger isOpen={isOpen} />
         </BurgerContainer>

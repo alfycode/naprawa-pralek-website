@@ -1,9 +1,6 @@
 import React from "react";
 import "./AboutUsElements";
-import { Container } from "../../components/Container";
-import opinionOne from "../../img/opinionOne.png";
-import opinionTwo from "../../img/opinionTwo.png";
-import opinionThree from "../../img/opinionThree.jpg";
+import { Container } from "../Container";
 import {
   AboutUsContentWrap,
   AboutUsTitle,
@@ -20,7 +17,7 @@ import { Bubble } from "../Landing/LandingElements";
 import { theme } from "../../helpers/theme";
 const AboutUsPage = () => {
   return (
-    <Container vh name="aboutUs">
+    <Container vh name='aboutUs'>
       <AboutUsContentWrap>
         <AboutUsTitle>
           Dlaczego <TitleSpan>warto nas</TitleSpan> wybrać?
@@ -37,8 +34,8 @@ const AboutUsPage = () => {
           szerokie grono zaufanych klientów.
         </AboutUsText>
       </AboutUsContentWrap>
-      <AboutUsContentWrap second right="true">
-        <AboutUsTitle right="true">
+      <AboutUsContentWrap second right='true'>
+        <AboutUsTitle right='true'>
           Opinie naszych <TitleSpan second>klientów</TitleSpan>
         </AboutUsTitle>
         <AboutUsOpinionsWrap>
@@ -49,7 +46,7 @@ const AboutUsPage = () => {
             whileTap={{ scale: 1.01 }}
             viewport={{ once: true }}
           >
-            <ClientProfilePicture src={opinionOne} />
+            <ClientProfilePicture src={"/img/opinionOne.png"} />
             <ClientOpinionTextWrap>
               <ClientNameText>Jan Jacek Gutowski</ClientNameText>
               <ClientOpinionText>
@@ -67,7 +64,7 @@ const AboutUsPage = () => {
             whileTap={{ scale: 1.01 }}
             viewport={{ once: true }}
           >
-            <ClientProfilePicture src={opinionTwo} />
+            <ClientProfilePicture src={"/img/opinionTwo.png"} />
             <ClientOpinionTextWrap>
               <ClientNameText>Monika Zawadzka</ClientNameText>
               <ClientOpinionText>
@@ -84,7 +81,7 @@ const AboutUsPage = () => {
             whileTap={{ scale: 1.01 }}
             viewport={{ once: true }}
           >
-            <ClientProfilePicture src={opinionThree} />
+            <ClientProfilePicture src={"/img/opinionThree.jpg"} />
             <ClientOpinionTextWrap>
               <ClientNameText>Piotr Wybraniec</ClientNameText>
               <ClientOpinionText>

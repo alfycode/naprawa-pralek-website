@@ -1,11 +1,6 @@
 import React from "react";
 import { Container } from "../../components/Container";
 import { TitleSpan, AboutUsTitle } from "../AboutUs/AboutUsElements";
-import Phone from "../../img/phone.svg";
-import Install from "../../img/install.svg";
-import Book from "../../img/book.svg";
-import Repair from "../../img/repair.svg";
-import Diagnose from "../../img/diagnose.svg";
 import {
   ServicesRow,
   ServiceItem,
@@ -17,10 +12,10 @@ import { Bubble } from "../Landing/LandingElements";
 import { theme } from "../../helpers/theme";
 const ServicesPage = () => {
   return (
-    <Container bgColor serv="true" name="services">
+    <Container bgColor serv='true' name='services'>
       <ServicesRow>
         <ServiceItem
-          text="true"
+          text='true'
           style={{ scale: 0 }}
           whileInView={{
             opacity: 1,
@@ -29,10 +24,10 @@ const ServicesPage = () => {
           }}
           viewport={{ once: true }}
         >
-          <AboutUsTitle serv="true">
+          <AboutUsTitle serv='true'>
             Jakie <TitleSpan blue>usługi </TitleSpan>oferujemy?
           </AboutUsTitle>
-          <ServiceText text="true">
+          <ServiceText text='true'>
             Szalast Z. Naprawa i serwis pralek automatycznych.
           </ServiceText>
         </ServiceItem>
@@ -47,7 +42,7 @@ const ServicesPage = () => {
           whileTap={{ scale: 1.02 }}
           viewport={{ once: true }}
         >
-          <ServiceItemIcon src={Phone} />
+          <ServiceItemIcon src={"/img/phone.svg"} />
           <ServiceText>porady telefoniczne</ServiceText>
           <ServiceItemBorder
             whileHover={{ rotate: 5 }}
@@ -65,7 +60,7 @@ const ServicesPage = () => {
           whileTap={{ scale: 1.02 }}
           viewport={{ once: true }}
         >
-          <ServiceItemIcon src={Install} />
+          <ServiceItemIcon src={"/img/install.svg"} />
           <ServiceText>instalacja nowo zakupionego sprzętu</ServiceText>
           <ServiceItemBorder
             whileHover={{ rotate: 5 }}
@@ -85,7 +80,7 @@ const ServicesPage = () => {
           whileTap={{ scale: 1.02 }}
           viewport={{ once: true }}
         >
-          <ServiceItemIcon src={Book} />
+          <ServiceItemIcon src={"/img/book.svg"} />
           <ServiceText>doradztwo w zakresie obsługi</ServiceText>
           <ServiceItemBorder
             whileHover={{ rotate: 5 }}
@@ -103,7 +98,7 @@ const ServicesPage = () => {
           whileTap={{ scale: 1.02 }}
           viewport={{ once: true }}
         >
-          <ServiceItemIcon src={Repair} />
+          <ServiceItemIcon src={"/img/repair.svg"} />
           <ServiceText>naprawa pralek wszystkich frim</ServiceText>
           <ServiceItemBorder
             whileHover={{ rotate: 5 }}
@@ -121,7 +116,7 @@ const ServicesPage = () => {
           whileTap={{ scale: 1.02 }}
           viewport={{ once: true }}
         >
-          <ServiceItemIcon src={Diagnose} />
+          <ServiceItemIcon src={"/img/diagnose.svg"} />
           <ServiceText>diagnoza usterek</ServiceText>
           <ServiceItemBorder
             whileHover={{ rotate: 5 }}

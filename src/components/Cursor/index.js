@@ -94,11 +94,10 @@ const Cursor = () => {
   });
   return (
     <>
-      <CustomCursor id="first" ref={mainCursor} />
-      <CustomCursor id="second" second ref={secondaryCursor} />
+      <CustomCursor id='first' ref={mainCursor} />
+      <CustomCursor id='second' second ref={secondaryCursor} />
     </>
   );
 };
 
 export default Cursor;
-

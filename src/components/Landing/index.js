@@ -1,8 +1,6 @@
 import React from "react";
 import { BsTelephone } from "react-icons/bs";
 import { BiTime } from "react-icons/bi";
-import BigLogo from "../../img/bigLogo.svg";
-import ScrollLogo from "../../img/scroll_icon.svg";
 import { Container } from "../../components/Container";
 import Logo from "./logo";
 import { theme } from "../../helpers/theme";
@@ -29,7 +27,7 @@ import {
 const LandingPage = () => {
   return (
     <Container vh landing bgColor>
-      <StyledContentContainer name="top">
+      <StyledContentContainer name='top'>
         <Logo />
         <StyledTextContentContainer
           initial={{ opacity: 0, y: 50 }}
@@ -51,7 +49,7 @@ const LandingPage = () => {
               <StyledHours>8:00 - 21:00</StyledHours>
             </StyledHoursContainer>
             <StyledPhoneContainer
-              href="tel:+48603663053"
+              href='tel:+48603663053'
               whileHover={{ scale: 0.97 }}
             >
               <StyledPhoneLogo>
@@ -73,7 +71,7 @@ const LandingPage = () => {
           },
         }}
       >
-        <StyledScrollIcon src={ScrollLogo} />
+        <StyledScrollIcon src={"/img/scroll_icon.svg"} />
       </ScrollIconWrap>
       <BubbleWrap>
         <Bubble landing bgc={theme.colors.darkBlue} />
