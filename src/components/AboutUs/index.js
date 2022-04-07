@@ -46,7 +46,7 @@ const AboutUsPage = () => {
             whileTap={{ scale: 1.01 }}
             viewport={{ once: true }}
           >
-            <ClientProfilePicture src={"/img/opinionOne.png"} />
+            <ClientProfilePicture src={"/img/opinionOne.png"} alt='klient 1' />
             <ClientOpinionTextWrap>
               <ClientNameText>Jan Jacek Gutowski</ClientNameText>
               <ClientOpinionText>
@@ -64,7 +64,7 @@ const AboutUsPage = () => {
             whileTap={{ scale: 1.01 }}
             viewport={{ once: true }}
           >
-            <ClientProfilePicture src={"/img/opinionTwo.png"} />
+            <ClientProfilePicture src={"/img/opinionTwo.png"} alt='klient 2' />
             <ClientOpinionTextWrap>
               <ClientNameText>Monika Zawadzka</ClientNameText>
               <ClientOpinionText>
@@ -81,7 +81,10 @@ const AboutUsPage = () => {
             whileTap={{ scale: 1.01 }}
             viewport={{ once: true }}
           >
-            <ClientProfilePicture src={"/img/opinionThree.jpg"} />
+            <ClientProfilePicture
+              src={"/img/opinionThree.jpg"}
+              alt='klient 3'
+            />
             <ClientOpinionTextWrap>
               <ClientNameText>Piotr Wybraniec</ClientNameText>
               <ClientOpinionText>

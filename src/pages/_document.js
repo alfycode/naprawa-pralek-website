@@ -16,15 +16,17 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html className='no-fouc'>
+      <Html className='no-fouc' lang='pl'>
         <Head>
           <meta charset='utf-8' />
+          <title>Naprawa Pralek i AGD Lublin Szalast Zenon</title>
           <link rel='icon' href='/favicon.ico' />
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <meta name='theme-color' content='#000000' />
           <meta
             name='description'
-            content='Naprawa pralek wszystkie typy Lublin. Darmowe porady telefoniczne. Rachunki-Gwarancja. Tel: 603 663 053'
+            content='Naprawa pralek Lublin wszystkie typy. Serwis urządzeń AGD Lublin. Darmowe porady telefoniczne. Rachunki-Gwarancja. Tel: 603 663 053'
+            key='desc'
           />
           <meta
             name='keywords'
@@ -35,7 +37,6 @@ export default class MyDocument extends Document {
             name='google-site-verification'
             content='lrFYB09_tTvmpmm-ir0kTDCv4kgRjCsat50-xdCPngA'
           />
-          <title>Naprawa Pralek i AGD Zenon Szalast</title>
           <style>
             {`.no-fouc {
             visibility: hidden;
