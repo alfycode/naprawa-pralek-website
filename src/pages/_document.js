@@ -41,7 +41,9 @@ export default class MyDocument extends Document {
         <body>
           <div id='fb-root'></div>
           <div id='fb-customer-chat' class='fb-customerchat'></div>
-          <Script strategy='lazyOnload'>{`
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
       var chatbox = document.getElementById("fb-customer-chat");
       chatbox.setAttribute("page_id", "195644990828561");
       chatbox.setAttribute("attribution", "biz_inbox");
@@ -64,7 +66,9 @@ export default class MyDocument extends Document {
       })(document, "script", "facebook-jssdk");
       
       
-      `}</Script>
+      `,
+            }}
+          />
           <Main />
           <NextScript />
         </body>
