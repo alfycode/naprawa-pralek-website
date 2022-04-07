@@ -39,6 +39,7 @@ export default class MyDocument extends Document {
           <title>Naprawa Pralek i AGD Zenon Szalast</title>
         </Head>
         <body>
+          <script>0</script>
           <div id='fb-root'></div>
           <div id='fb-customer-chat' class='fb-customerchat'></div>
           <script
