@@ -1,7 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
-import Script from "next/script";
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet();
@@ -17,7 +16,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html className='no-fouc'>
         <Head>
           <meta charset='utf-8' />
           <link rel='icon' href='/favicon.ico' />
@@ -37,9 +36,18 @@ export default class MyDocument extends Document {
             content='lrFYB09_tTvmpmm-ir0kTDCv4kgRjCsat50-xdCPngA'
           />
           <title>Naprawa Pralek i AGD Zenon Szalast</title>
+          <style>
+            {`.no-fouc {
+            visibility: hidden;
+            opacity: 0;
+          }
+          .fouc {
+            visibility: visible;
+            opacity: 1;
+          }`}
+          </style>
         </Head>
         <body>
-          <script>0</script>
           <div id='fb-root'></div>
           <div id='fb-customer-chat' class='fb-customerchat'></div>
           <script
