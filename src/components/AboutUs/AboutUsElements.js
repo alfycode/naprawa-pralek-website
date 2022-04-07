@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../../helpers/theme";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const AboutUsContentWrap = styled.div`
   width: 90%;
@@ -57,15 +58,17 @@ export const TitleSpan = styled.span`
   color: ${(props) => (props.blue ? theme.colors.darkBlue : "#fff")};
 `;
 export const AboutUsText = styled(motion.p)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-weight: 700;
   font-size: 2.4em;
   line-height: 1.3em;
-  text-align: center;
+  text-align: left;
   color: #fff;
   width: 90%;
   @media screen and (min-width: 960px) {
     font-size: 1.5em;
-    text-align: left;
     margin-top: 1em;
   }
 `;
@@ -139,5 +142,34 @@ export const ClientOpinionText = styled.p`
   padding: 0.5em 0.5em 1em 0.5em;
   @media screen and (min-width: 960px) {
     font-size: 0.75em;
+  }
+`;
+
+export const TextParagraph = styled.p`
+  text-indent: 5%;
+  margin-bottom: 10px;
+`;
+
+export const OpinionsLink = styled(Link)``;
+
+export const GoogleWebsiteButton = styled.button`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: ${theme.colors.lightBlue};
+  border: 5px solid #cee5f5;
+  border-radius: 100px;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 500;
+  cursor: none;
+  color: inherit;
+  text-decoration: inherit;
+  padding: 0.6em 1.2em;
+  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    background-color: transparent;
+    padding: 0.2em 1.2em;
   }
 `;
