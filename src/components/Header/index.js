@@ -44,7 +44,11 @@ const Header = () => {
           }
         }}
       >
-        <LogoType whileHover={{ scale: 1.1 }} src={"/img/logoType.svg"} />
+        <LogoType
+          whileHover={{ scale: 1.1 }}
+          src={"/img/logoType.svg"}
+          alt='logo pralki'
+        />
       </LogoContainer>
       <NavContainer>
         <NavLink

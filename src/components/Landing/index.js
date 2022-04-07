@@ -71,7 +71,7 @@ const LandingPage = () => {
           },
         }}
       >
-        <StyledScrollIcon src={"/img/scroll_icon.svg"} />
+        <StyledScrollIcon src={"/img/scroll_icon.svg"} alt='scroll icon' />
       </ScrollIconWrap>
       <BubbleWrap>
         <Bubble landing bgc={theme.colors.darkBlue} />
