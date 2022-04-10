@@ -134,7 +134,6 @@ export default class MyDocument extends Document {
             ]
           `}
           />
-          <script type='application/ld+json' />
           <Main />
           <NextScript />
         </body>
