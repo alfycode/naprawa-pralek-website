@@ -85,6 +85,7 @@ export default class MyDocument extends Document {
           />
           <StructuredDataContainer
             innerHTML={`
+            {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Naprawa pralek i AGD - Zenon Szalast",
@@ -132,9 +133,9 @@ export default class MyDocument extends Document {
                 "closes": "20:00"
               },
             ]
+          }
           `}
           />
-          <script type='application/ld+json' />
           <Main />
           <NextScript />
         </body>
