@@ -86,54 +86,55 @@ export default class MyDocument extends Document {
           <StructuredDataContainer
             innerHTML={`
             {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Naprawa pralek i AGD - Zenon Szalast",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "20857 Lublin Voivodeship Lublin Harnasie 17",
-              "addressLocality": "Lublin, Poland",
-              "addressRegion": "Lublin Voivodeship",
-              "postalCode": "20857",
-              "addressCountry": "PL"
-            },
-            "aggregateRating": {
-            "@type": "AggregateRating",
-            "bestRating": "5",
-            "ratingValue": "4.8",
-            "reviewCount": "61"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 51.27584,
-              "longitude": 22.54572
-            },
-            "url": "https://www.naprawapralek-lublin.pl",
-            "telephone": "+48603663053",
-            "priceRange": "$",
-            "openingHoursSpecification": [
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                ],
-                "opens": "08:00",
-                "closes": "21:00"
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Naprawa pralek i AGD - Zenon Szalast",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "20857 Lublin Voivodeship Lublin Harnasie 17",
+                "addressLocality": "Lublin, Poland",
+                "addressRegion": "Lublin Voivodeship",
+                "postalCode": "20857",
+                "addressCountry": "PL"
               },
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                  "Saturday",
-                ],
-                "opens": "09:00",
-                "closes": "20:00"
+              "aggregateRating": {
+              "@type": "AggregateRating",
+              "bestRating": "5",
+              "ratingValue": "4.8",
+              "reviewCount": "61"
               },
-            ]
-          }
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 51.27584,
+                "longitude": 22.54572
+              },
+              "url": "https://www.naprawapralek-lublin.pl",
+              "telephone": "+48603663053",
+              "priceRange": "$",
+            
+                        "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ],
+                  "opens": "08:00",
+                  "closes": "21:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Saturday"
+                  ],
+                  "opens": "09:00",
+                  "closes": "20:00"
+                }
+              ]
+  }
           `}
           />
           <Main />
