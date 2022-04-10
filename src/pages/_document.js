@@ -1,14 +1,14 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
-function StructuredDataContainer(props) {
-  return (
-    <script
-      type='application/ld+json'
-      dangerouslySetInnerHTML={{ __html: props.innerHTML }}
-    />
-  );
-}
+// function StructuredDataContainer(props) {
+//   return (
+//     <script
+//       type='application/ld+json'
+//       dangerouslySetInnerHTML={{ __html: props.innerHTML }}
+//     />
+//   );
+// }
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
