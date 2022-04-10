@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import StructuredDataContainer from "../helpers/StructuredDataContainer";
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -21,6 +22,7 @@ export default class MyDocument extends Document {
           <meta charset='utf-8' />
           <title>Naprawa Pralek i AGD Lublin Szalast Zenon</title>
           <link rel='icon' href='/favicon.ico' />
+          <link rel='canonical' href='https://www.naprawapralek-lublin.pl' />
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <meta name='theme-color' content='#000000' />
           <meta
@@ -37,6 +39,8 @@ export default class MyDocument extends Document {
             name='google-site-verification'
             content='lrFYB09_tTvmpmm-ir0kTDCv4kgRjCsat50-xdCPngA'
           />
+          <meta name='Classification' content='global,all' />
+          <meta name='revisit-after' content='1 day' />
           <style>
             {`.no-fouc {
             visibility: hidden;
@@ -53,7 +57,7 @@ export default class MyDocument extends Document {
           <div id='fb-customer-chat' class='fb-customerchat'></div>
           <script
             dangerouslySetInnerHTML={{
-              __html: `
+              __html: `           
       var chatbox = document.getElementById("fb-customer-chat");
       chatbox.setAttribute("page_id", "195644990828561");
       chatbox.setAttribute("attribution", "biz_inbox");
@@ -79,6 +83,58 @@ export default class MyDocument extends Document {
       `,
             }}
           />
+          <StructuredDataContainer
+            innerHTML={`
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Naprawa pralek i AGD - Zenon Szalast",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "20857 Lublin Voivodeship Lublin Harnasie 17",
+              "addressLocality": "Lublin, Poland",
+              "addressRegion": "Lublin Voivodeship",
+              "postalCode": "20857",
+              "addressCountry": "PL"
+            },
+            "aggregateRating": {
+            "@type": "AggregateRating",
+            "bestRating": "5",
+            "ratingValue": "4.8",
+            "reviewCount": "61"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 51.27584,
+              "longitude": 22.54572
+            },
+            "url": "https://www.naprawapralek-lublin.pl",
+            "telephone": "+48603663053",
+            "priceRange": "$",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                ],
+                "opens": "08:00",
+                "closes": "21:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Saturday",
+                ],
+                "opens": "09:00",
+                "closes": "20:00"
+              },
+            ]
+          `}
+          />
+          <script type='application/ld+json' />
           <Main />
           <NextScript />
         </body>
