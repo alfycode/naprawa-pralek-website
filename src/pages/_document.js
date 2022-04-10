@@ -91,7 +91,7 @@ export default class MyDocument extends Document {
       `,
             }}
           />
-          <StructuredDataContainer
+          {/* <StructuredDataContainer
             innerHTML={`
             {
               "@context": "https://schema.org",
@@ -144,7 +144,7 @@ export default class MyDocument extends Document {
               ]
   }
           `}
-          />
+          /> */}
           <Main />
           <NextScript />
         </body>
