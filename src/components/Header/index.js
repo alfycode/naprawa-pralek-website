@@ -51,10 +51,21 @@ const Header = () => {
         />
       </LogoContainer>
       <NavContainer>
+      <NavLink
+          className='link'
+          spy={true}
+          offset={-100}
+          smooth={true}
+          duration={500}
+          activeClass='active'
+          to='top'
+        >
+          Strona główna
+        </NavLink>
         <NavLink
           className='link'
           spy={true}
-          offset={-80}
+          offset={-95}
           smooth={true}
           duration={500}
           activeClass='active'
@@ -65,7 +76,7 @@ const Header = () => {
         <NavLink
           className='link'
           spy={true}
-          offset={-80}
+          offset={-90}
           smooth={true}
           duration={500}
           activeClass='active'

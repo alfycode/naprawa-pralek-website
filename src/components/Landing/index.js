@@ -26,8 +26,8 @@ import {
 } from "./LandingElements";
 const LandingPage = () => {
   return (
-    <Container vh landing bgColor>
-      <StyledContentContainer name='top'>
+    <Container vh landing bgColor name='top'>
+      <StyledContentContainer>
         <Logo />
         <StyledTextContentContainer
           initial={{ opacity: 0, y: 50 }}

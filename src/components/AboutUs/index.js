@@ -18,12 +18,14 @@ import {
 } from "./AboutUsElements";
 import { Bubble } from "../Landing/LandingElements";
 import { theme } from "../../helpers/theme";
+import styled from 'styled-components';
+
 const AboutUsPage = () => {
   return (
     <Container vh name='aboutUs'>
       <AboutUsContentWrap>
         <AboutUsTitle>
-          Dlaczego <TitleSpan>warto nas</TitleSpan> wybrać?
+          Dlaczego <TitleSpan>warto </TitleSpan>nas <TitleSpan>wybrać?</TitleSpan>
         </AboutUsTitle>
         <AboutUsText
           style={{ opacity: 0 }}
@@ -48,9 +50,6 @@ const AboutUsPage = () => {
             całego układu elektronicznego. Posiadam szerokie grono zaufanych
             klientów, którzy skorzystali już w moich usług serwisowych.
           </TextParagraph>
-          <OpinionsLink href={"https://g.page/r/CRNUyEpn1OkuEAE"}>
-            <GoogleWebsiteButton>Profil firmy w Google</GoogleWebsiteButton>
-          </OpinionsLink>
         </AboutUsText>
       </AboutUsContentWrap>
       <AboutUsContentWrap second right='true'>
@@ -113,6 +112,9 @@ const AboutUsPage = () => {
               </ClientOpinionText>
             </ClientOpinionTextWrap>
           </AboutUsOpinionContainer>
+          <OpinionsLink href={"https://g.page/r/CRNUyEpn1OkuEAE"}>
+            <GoogleWebsiteButton>Profil firmy w Google</GoogleWebsiteButton>
+          </OpinionsLink>
         </AboutUsOpinionsWrap>
       </AboutUsContentWrap>
       <Bubble white bgc={theme.colors.bubbleWhite} top={"-10%"} left={"-5%"} />

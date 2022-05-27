@@ -12,6 +12,7 @@ export const AboutUsContentWrap = styled.div`
   gap: 3em;
   margin-bottom: 5em;
   z-index: 10;
+  padding: 0 4rem;
   @media screen and (min-width: 768px) {
     width: 80%;
   }
@@ -20,7 +21,7 @@ export const AboutUsContentWrap = styled.div`
   }
 `;
 export const AboutUsTitle = styled(motion.h2)`
-  width: ${(props) => (props.serv ? "300px" : "250px")};
+  // width: ${(props) => (props.serv ? "300px" : "250px")};
   font-size: 3.8em;
   font-weight: 800;
   text-align: center;
@@ -29,28 +30,28 @@ export const AboutUsTitle = styled(motion.h2)`
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   padding-top: ${(props) => (props.serv ? "0" : "0.5em")};
   @media screen and (min-width: 550px) {
-    width: ${(props) => (props.serv ? "400px" : "350px")};
+    // width: ${(props) => (props.serv ? "400px" : "350px")};
   }
   @media screen and (min-width: 960px) {
-    width: ${(props) => (props.right ? "fit-content" : "350px")};
+    // width: ${(props) => (props.right ? "fit-content" : "350px")};
     font-size: 2.2em;
     text-align: ${(props) => [props.serv ? "center" : "left"]};
     padding-top: ${(props) => (props.serv ? "0" : "100px")};
   }
   @media screen and (min-width: 1280px) {
-    width: ${(props) => (props.right ? "fit-content" : "490px")};
+    // width: ${(props) => (props.right ? "fit-content" : "490px")};
     font-size: 2.6em;
   }
   @media screen and (min-width: 1600px) {
-    width: ${(props) => (props.right ? "fit-content" : "550px")};
+    // width: ${(props) => (props.right ? "fit-content" : "550px")};
     font-size: 2.8em;
   }
   @media screen and (min-width: 1920px) {
-    width: ${(props) => (props.right ? "fit-content" : "600px")};
+    // width: ${(props) => (props.right ? "fit-content" : "600px")};
     font-size: 3em;
   }
   @media screen and (min-width: 2300px) {
-    width: ${(props) => (props.right ? "fit-content" : "700px")};
+    // width: ${(props) => (props.right ? "fit-content" : "700px")};
     font-size: 3em;
   }
 `;
@@ -61,15 +62,16 @@ export const AboutUsText = styled(motion.p)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 2.4em;
   line-height: 1.3em;
-  text-align: left;
+  text-align: center;
   color: #fff;
-  width: 90%;
+  // width: 90%;
   @media screen and (min-width: 960px) {
-    font-size: 1.5em;
-    margin-top: 1em;
+    font-size: 1.25em;
+    // margin-top: 1em;
+    text-align: left;
   }
 `;
 export const AboutUsOpinionsWrap = styled.div`
@@ -80,16 +82,17 @@ export const AboutUsOpinionsWrap = styled.div`
   justify-content: center;
   align-items: center;
   gap: 3em;
-  @media screen and (min-width: 768px) {
-    width: 95%;
-  }
+  // @media screen and (min-width: 768px) {
+  //  width: 100%;
+  // }
   @media screen and (min-width: 960px) {
     gap: 1em;
+    align-items: flex-start;
   }
 `;
 export const AboutUsOpinionContainer = styled(motion.div)`
   height: fit-content;
-  width: 80%;
+  width: 100%;
   max-width: 872px;
   border-radius: 10px;
   padding: 1.5em;
@@ -99,11 +102,11 @@ export const AboutUsOpinionContainer = styled(motion.div)`
   justify-content: center;
   align-items: center;
   gap: 2em;
-  @media screen and (min-width: 550px) {
-    width: 75%;
-  }
+  // @media screen and (min-width: 550px) {
+  //   width: 75%;
+  // }
   @media screen and (min-width: 960px) {
-    width: 90%;
+    // width: 90%;
     gap: 1em;
     flex-direction: row;
     padding: 0.8em;
@@ -162,14 +165,16 @@ export const GoogleWebsiteButton = styled.button`
   border-radius: 100px;
   font-size: inherit;
   line-height: 120%;
-  font-weight: 500;
+  font-weight: 700;
   cursor: none;
-  color: inherit;
+  color: white;
   text-decoration: inherit;
-  padding: 0.6em 1.2em;
+  padding: 1.25rem 2rem;
   margin-top: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
   @media screen and (min-width: 768px) {
     background-color: transparent;
-    padding: 0.2em 1.2em;
+    padding: .75rem 1.5rem;
   }
 `;
