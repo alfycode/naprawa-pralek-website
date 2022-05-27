@@ -28,7 +28,7 @@ const ServicesPage = () => {
             Jakie <TitleSpan blue>usługi </TitleSpan>oferujemy?
           </AboutUsTitle>
           <ServiceText text='true' heading>
-            Szalast Z. Naprawa i serwis pralek automatycznych.
+            Szalast Zenon naprawa i serwis pralek automatycznych
           </ServiceText>
         </ServiceItem>
         <ServiceItem
@@ -99,7 +99,7 @@ const ServicesPage = () => {
           viewport={{ once: true }}
         >
           <ServiceItemIcon src={"/img/repair.svg"} />
-          <ServiceText>naprawa pralek wszystkich frim</ServiceText>
+          <ServiceText>naprawa pralek wszystkich firm</ServiceText>
           <ServiceItemBorder
             whileHover={{ rotate: 5 }}
             style={{ rotate: -5 }}

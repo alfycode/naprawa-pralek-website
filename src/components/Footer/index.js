@@ -47,7 +47,7 @@ const Footer = () => {
 					/>
 				</LogoContainer>
 				<StyledPersonalData>
-					<StyledTextHeading>Naprawa pralek i agd</StyledTextHeading>
+					<StyledTextHeading>Naprawa pralek i AGD</StyledTextHeading>
 					<StyledTextName>Zenon Szalast</StyledTextName>
 				</StyledPersonalData>
 			</LogoWrapper>
