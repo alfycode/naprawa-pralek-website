@@ -9,7 +9,7 @@ export const Container = styled.div`
   width: 100%;
   background: ${(props) =>
     props.bgColor ? theme.colors.whiteLinear : theme.colors.darkBlue};
-  padding-top: ${(props) => (props.landing ? "80px" : "0")};
+  padding: ${(props) => (props.landing ? "80px" : "0")} 3rem 0 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +27,7 @@ export const Container = styled.div`
     flex-direction: ${(props) => (props.serv ? "column" : "row")};
     align-items: ${(props) => (props.landing ? "center" : "flex-start")};
     justify-content: ${(props) => (props.serv ? "flex-start" : "center")};
+    padding: ${(props) => (props.landing ? "80px" : "0")} 5rem 0 5rem;
     font-size: 16px;
   }
   @media screen and (min-width: 1280px) {

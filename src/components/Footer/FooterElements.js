@@ -3,17 +3,17 @@ import { Container } from '../Container';
 import { LogoType } from '../Header/HeaderElements';
 
 export const StyledContainer = styled(Container)`
-	width: 100%;
 	min-height: 100px;
 	align-items: center;
 	justify-content: center;
-	padding: 1.5rem 4rem;
+	padding: 1.5rem 0;
 	color: white;
 	row-gap: 1.75rem;
 
 	@media screen and (min-width: 960px) {
 		flex-direction: row;
 		justify-content: space-between;
+		padding: 0 5rem;
 	}
 `;
 
