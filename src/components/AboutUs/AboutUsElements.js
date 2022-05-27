@@ -168,7 +168,7 @@ export const GoogleWebsiteButton = styled.button`
 	font-weight: 700;
 	cursor: none;
 	color: white;
-	padding: 1em 2em;
+	padding: 1em 1.5em;
 	margin-top: 10px;
 	font-size: 1rem;
 	text-transform: uppercase;
