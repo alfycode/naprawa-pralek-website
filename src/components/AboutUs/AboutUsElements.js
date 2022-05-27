@@ -168,14 +168,14 @@ export const GoogleWebsiteButton = styled.button`
 	font-weight: 700;
 	cursor: none;
 	color: white;
-	padding: 1.25rem 2rem;
+	padding: 1.25em 3em;
 	margin-top: 10px;
 	font-size: 1rem;
 	text-transform: uppercase;
 	transition: 0.5s ease-in-out;
 	@media screen and (min-width: 768px) {
 		// background-color: transparent;
-		padding: 1rem 1.5rem;
+		padding: 1.25em 2.5em;
 	}
 
 	&:hover {
