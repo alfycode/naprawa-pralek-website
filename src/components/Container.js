@@ -19,6 +19,7 @@ export const Container = styled.div`
   overflow: hidden;
   @media screen and (min-width: 550px) {
     font-size: 12px;
+    padding: ${(props) => (props.landing ? "80px" : "0")} 2rem 0 2rem;
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -27,7 +28,7 @@ export const Container = styled.div`
     flex-direction: ${(props) => (props.serv ? "column" : "row")};
     align-items: ${(props) => (props.landing ? "center" : "flex-start")};
     justify-content: ${(props) => (props.serv ? "flex-start" : "center")};
-    padding: ${(props) => (props.landing ? "80px" : "0")} 5rem 0 5rem;
+    padding: ${(props) => (props.landing ? "80px" : "0")} 4rem 0 4rem;
     font-size: 16px;
   }
   @media screen and (min-width: 1280px) {

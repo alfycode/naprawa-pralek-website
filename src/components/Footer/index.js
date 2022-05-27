@@ -51,6 +51,14 @@ const Footer = () => {
 					<StyledTextName>Zenon Szalast</StyledTextName>
 				</StyledPersonalData>
 			</LogoWrapper>
+			<StyledButtonsContainer>
+				<Link href="https://www.facebook.com/naprawapraleklublin1/">
+					<StyledFacebook />
+				</Link>
+				<Link href="https://g.page/r/CRNUyEpn1OkuEAE">
+					<StyledGoogle />
+				</Link>
+			</StyledButtonsContainer>
 			<StyledDetails>
 				<StyledDetail>
 					<StyledTimeIcon />
@@ -61,14 +69,6 @@ const Footer = () => {
 					+48 603 663 053
 				</StyledDetail>
 			</StyledDetails>
-			<StyledButtonsContainer>
-				<Link href="https://www.facebook.com/naprawapraleklublin1/">
-					<StyledFacebook />
-				</Link>
-				<Link href="https://g.page/r/CRNUyEpn1OkuEAE">
-					<StyledGoogle />
-				</Link>
-			</StyledButtonsContainer>
 			<BubbleWrap second>
 				<Bubble second landing bgc="#ccc" />
 			</BubbleWrap>

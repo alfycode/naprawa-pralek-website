@@ -14,7 +14,7 @@ export const AboutUsContentWrap = styled.div`
 	z-index: 10;
 	padding: 0;
 	@media screen and (min-width: 768px) {
-		width: 80%;
+		width: 70%;
 	}
 	@media screen and (min-width: 960px) {
 		width: ${(props) => (props.right ? '50%' : '50%')};
@@ -22,7 +22,7 @@ export const AboutUsContentWrap = styled.div`
 `;
 export const AboutUsTitle = styled(motion.h2)`
 	// width: ${(props) => (props.serv ? '300px' : '250px')};
-	font-size: 3.8em;
+	font-size: 2.25em;
 	font-weight: 800;
 	text-align: center;
 	line-height: 1.1em;
@@ -34,21 +34,21 @@ export const AboutUsTitle = styled(motion.h2)`
 	}
 	@media screen and (min-width: 960px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '350px')};
-		font-size: 2.2em;
+		font-size: 1.75em;
 		text-align: ${(props) => [props.serv ? 'center' : 'left']};
 		padding-top: ${(props) => (props.serv ? '0' : '100px')};
 	}
 	@media screen and (min-width: 1280px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '490px')};
-		font-size: 2.6em;
+		font-size: 2.5em;
 	}
 	@media screen and (min-width: 1600px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '550px')};
-		font-size: 2.8em;
+		font-size: 2.7em;
 	}
 	@media screen and (min-width: 1920px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '600px')};
-		font-size: 2.97em;
+		font-size: 2.85em;
 	}
 	@media screen and (min-width: 2300px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '700px')};
@@ -63,7 +63,7 @@ export const AboutUsText = styled(motion.p)`
 	flex-direction: column;
 	align-items: center;
 	font-weight: 400;
-	font-size: 2em;
+	font-size: 1.5em;
 	line-height: 1.3em;
 	text-align: center;
 	color: #fff;
@@ -93,7 +93,7 @@ export const AboutUsOpinionsWrap = styled.div`
 `;
 export const AboutUsOpinionContainer = styled(motion.div)`
 	height: fit-content;
-	width: clamp(75%, 872px, 100%);
+	width: min(872px, 80%);
 	border-radius: 10px;
 	padding: 1.5em;
 	background-color: rgba(250, 252, 254, 0.75);

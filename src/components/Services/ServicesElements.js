@@ -24,7 +24,7 @@ export const ServicesRow = styled.section`
 export const ServiceItem = styled(motion.div)`
 	opacity: 0;
 	// min-width: 250px;
-	width: clamp(180px, 300px, 430px);
+	width: min(80%, 350px);
 	// max-width: ${(props) => (props.text ? '250px' : '400px')};
 	position: relative;
 	aspect-ratio: 1 / 0.8;
