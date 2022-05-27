@@ -13,6 +13,8 @@ import {
 	LogoWrapper,
 	StyledTextHeading,
 	StyledTextName,
+	StyledFacebook,
+	StyledGoogle,
 } from './FooterElements';
 import { Bubble, BubbleWrap } from '../Landing/LandingElements';
 
@@ -58,12 +60,12 @@ const Footer = () => {
 				</StyledDetail>
 			</StyledDetails>
 			<StyledButtonsContainer>
-				<BsFacebook />
-				<BsGoogle />
+				<StyledFacebook />
+				<StyledGoogle />
 			</StyledButtonsContainer>
 			<BubbleWrap second>
-        <Bubble second landing bgc="#ccc" />
-      </BubbleWrap>
+				<Bubble second landing bgc="#ccc" />
+			</BubbleWrap>
 		</StyledContainer>
 	);
 };
