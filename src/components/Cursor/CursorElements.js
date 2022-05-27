@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { theme } from "../../helpers/theme";
 export const CustomCursor = styled.div`
   display: none;
-  width: ${(props) => (props.second ? "2.25em" : "1em")};
-  height: ${(props) => (props.second ? "2.25em" : "1em")};
+  width: ${(props) => (props.second ? "2.25em" : ".75em")};
+  height: ${(props) => (props.second ? "2.25em" : ".75em")};
   border-radius: 50%;
   background-color: ${(props) =>
     props.second ? "transparent" : theme.colors.dark};

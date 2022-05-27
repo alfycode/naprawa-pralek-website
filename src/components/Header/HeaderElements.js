@@ -33,7 +33,7 @@ export const LogoType = styled(motion.img)`
 export const NavContainer = styled.li`
 	display: flex;
 	justify-content: center;
-	gap: 4em;
+	gap: 1.5em;
 	list-style: none;
 	@media screen and (max-width: 768px) {
 		display: none;

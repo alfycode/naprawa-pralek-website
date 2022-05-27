@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { Container } from '../Container';
 import { LogoType } from '../Header/HeaderElements';
-import { BsGoogle, BsFacebook } from 'react-icons/bs';
+import { BsGoogle, BsFacebook, BsTelephone } from 'react-icons/bs';
+import { BiTime } from 'react-icons/bi';
 
 export const StyledContainer = styled(Container)`
 	min-height: 100px;
@@ -99,4 +100,12 @@ export const StyledGoogle = styled(BsGoogle)`
 
 export const StyledLogoTypeColor = styled(LogoType)`
 	filter: brightness(10);
+`;
+
+export const StyledTimeIcon = styled(BiTime)`
+	font-size: 1.25em;
+`;
+
+export const StyledTelephoneIcon = styled(BsTelephone)`
+	font-size: 1.25em;
 `;

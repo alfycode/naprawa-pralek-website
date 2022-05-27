@@ -22,7 +22,7 @@ export const MobileMenuWrap = styled(motion.ul)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 1.5em;
 `;
 export const NavItem = styled(motion.li)`
   list-style: none;

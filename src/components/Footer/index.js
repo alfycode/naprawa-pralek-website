@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { LogoContainer, LogoType as LogoType } from '../Header/HeaderElements';
 import { BiTime } from 'react-icons/bi';
 import { BsTelephone } from 'react-icons/bs';
-import { BsGoogle, BsFacebook } from 'react-icons/bs';
+import Link from 'next/link';
 import {
 	StyledButtonsContainer,
 	StyledContainer,
@@ -15,6 +15,8 @@ import {
 	StyledTextName,
 	StyledFacebook,
 	StyledGoogle,
+	StyledTelephoneIcon,
+	StyledTimeIcon,
 } from './FooterElements';
 import { Bubble, BubbleWrap } from '../Landing/LandingElements';
 
@@ -51,17 +53,21 @@ const Footer = () => {
 			</LogoWrapper>
 			<StyledDetails>
 				<StyledDetail>
-					<BiTime />
+					<StyledTimeIcon />
 					8:00 - 21:00
 				</StyledDetail>
 				<StyledDetail>
-					<BsTelephone />
+					<StyledTelephoneIcon />
 					+48 603 663 053
 				</StyledDetail>
 			</StyledDetails>
 			<StyledButtonsContainer>
-				<StyledFacebook />
-				<StyledGoogle />
+				<Link href="https://www.facebook.com/naprawapraleklublin1/">
+					<StyledFacebook />
+				</Link>
+				<Link href="https://g.page/r/CRNUyEpn1OkuEAE">
+					<StyledGoogle />
+				</Link>
 			</StyledButtonsContainer>
 			<BubbleWrap second>
 				<Bubble second landing bgc="#ccc" />
