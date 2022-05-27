@@ -14,7 +14,7 @@ export const StyledContainer = styled(Container)`
 
 	@media screen and (min-width: 960px) {
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
 		padding: 0 4rem;
 	}
 `;

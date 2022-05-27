@@ -40,19 +40,19 @@ export const AboutUsTitle = styled(motion.h2)`
 	}
 	@media screen and (min-width: 1280px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '490px')};
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 	@media screen and (min-width: 1600px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '550px')};
-		font-size: 2.7em;
+		font-size: 2.25em;
 	}
 	@media screen and (min-width: 1920px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '600px')};
-		font-size: 2.85em;
+		font-size: 2.5em;
 	}
 	@media screen and (min-width: 2300px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '700px')};
-		font-size: 3em;
+		font-size: 2.75em;
 	}
 `;
 export const TitleSpan = styled.span`
