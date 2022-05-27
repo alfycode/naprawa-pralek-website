@@ -31,9 +31,9 @@ export const StyledPersonalData = styled.div`
 `;
 
 export const StyledTextHeading = styled.h2`
-	font-size: 2em;
+	font-size: 1.75em;
 	@media screen and (min-width: 768px) {
-		font-size: 2em;
+		font-size: 1.75em;
 	}
 	@media screen and (min-width: 960px) {
 		font-size: 1.25em;

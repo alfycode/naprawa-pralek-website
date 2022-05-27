@@ -10,7 +10,7 @@ export const ServicesRow = styled.section`
 	justify-content: space-around;
 	align-items: center;
 	gap: 6em;
-	padding: 3em 0;
+	padding: 4em 0;
 	flex-wrap: nowrap;
 	overflow: hidden;
 	@media screen and (min-width: 960px) {
@@ -57,6 +57,7 @@ export const ServiceText = styled.p`
 	text-align: center;
 	color: ${theme.colors.dark};
 	padding-top: 1em;
+	padding-bottom: ${({heading}) => heading ? '.5em' : '0'};
 	@media screen and (min-width: 550px) {
 		width: ${(props) => (props.text ? '300px' : '240px')};
 	}

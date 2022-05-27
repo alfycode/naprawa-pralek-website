@@ -27,7 +27,7 @@ const ServicesPage = () => {
           <AboutUsTitle serv='true'>
             Jakie <TitleSpan blue>usługi </TitleSpan>oferujemy?
           </AboutUsTitle>
-          <ServiceText text='true'>
+          <ServiceText text='true' heading>
             Szalast Z. Naprawa i serwis pralek automatycznych.
           </ServiceText>
         </ServiceItem>
