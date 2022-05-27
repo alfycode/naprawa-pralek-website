@@ -9,7 +9,7 @@ export const Container = styled.div`
   width: 100%;
   background: ${(props) =>
     props.bgColor ? theme.colors.whiteLinear : theme.colors.darkBlue};
-  padding: ${(props) => (props.landing ? "80px" : "0")} 2rem 0 2rem;
+  padding: ${(props) => (props.landing ? "80px" : "0")} 1rem 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
