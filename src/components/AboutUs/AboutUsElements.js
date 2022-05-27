@@ -93,8 +93,7 @@ export const AboutUsOpinionsWrap = styled.div`
 `;
 export const AboutUsOpinionContainer = styled(motion.div)`
 	height: fit-content;
-	width: 100%;
-	max-width: 872px;
+	width: clamp(75%, 872px, 100%);
 	border-radius: 10px;
 	padding: 1.5em;
 	background-color: rgba(250, 252, 254, 0.75);

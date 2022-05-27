@@ -23,9 +23,9 @@ export const ServicesRow = styled.section`
 `;
 export const ServiceItem = styled(motion.div)`
 	opacity: 0;
-	min-width: 180px;
-	width: calc(100% - 14em);
-	max-width: ${(props) => (props.text ? '180px' : '400px')};
+	// min-width: 250px;
+	width: clamp(180px, 300px, 430px);
+	// max-width: ${(props) => (props.text ? '250px' : '400px')};
 	position: relative;
 	aspect-ratio: 1 / 0.8;
 	background-color: ${(props) =>
@@ -37,18 +37,18 @@ export const ServiceItem = styled(motion.div)`
 	margin: ${(props) => (props.text ? '1em 0 -2em 0' : '0')};
 	z-index: 10;
 	@media screen and (min-width: 960px) {
-		max-width: ${(props) => (props.text ? '250px' : '250px')};
+		// max-width: ${(props) => (props.text ? '250px' : '250px')};
 		margin: 0;
 	}
-	@media screen and (min-width: 1280px) {
-		max-width: 300px;
-	}
-	@media screen and (min-width: 1600px) {
-		max-width: 370px;
-	}
-	@media screen and (min-width: 1980px) {
-		max-width: 430px;
-	}
+	// @media screen and (min-width: 1280px) {
+	// 	max-width: 300px;
+	// }
+	// @media screen and (min-width: 1600px) {
+	// 	max-width: 370px;
+	// }
+	// @media screen and (min-width: 1980px) {
+	// 	max-width: 430px;
+	// }
 `;
 export const ServiceText = styled.p`
 	width: ${(props) => (props.text ? '250px' : '170px')};
