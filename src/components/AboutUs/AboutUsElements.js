@@ -22,7 +22,7 @@ export const AboutUsContentWrap = styled.div`
 `;
 export const AboutUsTitle = styled(motion.h2)`
 	// width: ${(props) => (props.serv ? '300px' : '250px')};
-	font-size: 2.5em;
+	font-size: 2rem;
 	font-weight: 800;
 	text-align: center;
 	line-height: 1.1em;
@@ -34,25 +34,25 @@ export const AboutUsTitle = styled(motion.h2)`
 	}
 	@media screen and (min-width: 960px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '350px')};
-		font-size: 1.75em;
+		font-size: 2rem;
 		text-align: ${(props) => [props.serv ? 'center' : 'left']};
 		padding-top: ${(props) => (props.serv ? '0' : '100px')};
 	}
 	@media screen and (min-width: 1280px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '490px')};
-		font-size: 2em;
+		font-size: 2.5rem;
 	}
 	@media screen and (min-width: 1600px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '550px')};
-		font-size: 2.25em;
+		font-size: 3rem;
 	}
 	@media screen and (min-width: 1920px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '600px')};
-		font-size: 2.5em;
+		font-size: 3.25rem;
 	}
 	@media screen and (min-width: 2300px) {
 		// width: ${(props) => (props.right ? 'fit-content' : '700px')};
-		font-size: 2.75em;
+		font-size: 3.5rem;
 	}
 `;
 export const TitleSpan = styled.span`
@@ -63,17 +63,23 @@ export const AboutUsText = styled(motion.p)`
 	flex-direction: column;
 	align-items: center;
 	font-weight: 400;
-	font-size: 1.75em;
-	line-height: 1.3em;
+	font-size: 1.25rem;
+	line-height: 2rem;
 	text-align: center;
 	text-shadow: 0px 0px px rgba(0, 0, 0, .1);
 	color: #fff;
 	// width: 90%;
 	@media screen and (min-width: 960px) {
-		font-size: 1.25em;
+		font-size: 1.25rem;
 		// margin-top: 1em;
 		text-align: left;
 		padding-right: 2rem;
+	}
+	@media screen and (min-width: 1280px) {
+		font-size: 1.5rem;
+	}
+	@media screen and (min-width: 1600px) {
+		font-size: 1.75rem;
 	}
 `;
 export const AboutUsOpinionsWrap = styled.div`
