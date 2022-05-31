@@ -51,6 +51,7 @@ export const StyledTitle = styled.h1`
   font-size: 4em;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   font-weight: 600;
+  line-height: 1.1;
   white-space: nowrap;
   @media screen and (min-width: 768px) {
     font-size: 3.2em;
@@ -67,12 +68,12 @@ export const StyledSubTitle = styled.h2`
 export const StyledPhoneHoursContainer = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: 2.2em;
+  font-size: 2em;
   align-items: center;
   justify-content: center;
   width: 80vw;
   @media screen and (min-width: 768px) {
-    font-size: 1.7em;
+    font-size: 1.25em;
     flex-direction: row;
   }
 `;

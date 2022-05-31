@@ -22,7 +22,7 @@ export const AboutUsContentWrap = styled.div`
 `;
 export const AboutUsTitle = styled(motion.h2)`
 	// width: ${(props) => (props.serv ? '300px' : '250px')};
-	font-size: 2.25em;
+	font-size: 2.5em;
 	font-weight: 800;
 	text-align: center;
 	line-height: 1.1em;
@@ -63,9 +63,10 @@ export const AboutUsText = styled(motion.p)`
 	flex-direction: column;
 	align-items: center;
 	font-weight: 400;
-	font-size: 1.5em;
+	font-size: 1.75em;
 	line-height: 1.3em;
 	text-align: center;
+	text-shadow: 0px 0px px rgba(0, 0, 0, .1);
 	color: #fff;
 	// width: 90%;
 	@media screen and (min-width: 960px) {

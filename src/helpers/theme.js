@@ -10,15 +10,14 @@ export const theme = {
     bubbleWhite: "rgba(255, 255, 255, 0.2)",
     bubbleBlue: "rgba(79, 170, 231, 0.2)",
   },
-  fonts: ["Poppins", "sans-serif"],
+  fonts: "Poppins",
   fontSizes: {
     small: "1em",
-    medium: "2em",
-    large: "3em",
+    medium: "1.5em",
+    large: "2.25em",
   },
 };
 export const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
   * {
     box-sizing: border-box;
     margin: 0;
@@ -26,9 +25,8 @@ export const GlobalStyles = createGlobalStyle`
     cursor: none;
   }
   body {
-    font-size: 20px;
+    font-size: 16px;
     font-family: ${({ theme }) => theme.fonts}, sans-serif;
-    src:url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
     cursor: none;
   }
 `;

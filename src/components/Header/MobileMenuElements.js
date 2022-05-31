@@ -28,7 +28,7 @@ export const NavItem = styled(motion.li)`
   list-style: none;
 `;
 export const StyledLink = styled(Link)`
-  font-size: 1.5em;
+  font-size: 1em;
   letter-spacing: 0.03em;
   color: ${theme.colors.dark};
   cursor: none;

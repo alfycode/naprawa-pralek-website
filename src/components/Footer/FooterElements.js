@@ -33,16 +33,21 @@ export const StyledPersonalData = styled.div`
 
 export const StyledTextHeading = styled.h2`
 	font-size: 1.75em;
+	font-weight: 600;
+	line-height: 1.25;
 	@media screen and (min-width: 768px) {
-		font-size: 1.75em;
+		font-size: 1.5em;
 	}
 	@media screen and (min-width: 960px) {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 `;
 
 export const StyledTextName = styled.p`
 	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #19364A;
 	@media screen and (min-width: 768px) {
 		font-size: 1.25em;
 	}

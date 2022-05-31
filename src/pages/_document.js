@@ -31,6 +31,10 @@ export default class MyDocument extends Document {
 					<title>Naprawa Pralek i AGD Lublin Szalast Zenon</title>
 					<link rel="icon" href="/favicon.ico" />
 					<link rel="canonical" href="https://www.naprawapralek-lublin.pl" />
+					<link
+						href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+						rel="stylesheet"
+					/>
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta name="theme-color" content="#000000" />
 					<meta

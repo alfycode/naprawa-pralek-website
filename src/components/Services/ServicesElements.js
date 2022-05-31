@@ -51,8 +51,8 @@ export const ServiceItem = styled(motion.div)`
 	// }
 `;
 export const ServiceText = styled.p`
-	width: ${(props) => (props.text ? '250px' : '170px')};
-	font-size: 1.6em;
+	width: ${(props) => (props.text ? '250px' : '180px')};
+	font-size: 1.75em;
 	font-weight: 600;
 	text-align: center;
 	color: ${theme.colors.dark};
@@ -62,7 +62,7 @@ export const ServiceText = styled.p`
 		width: ${(props) => (props.text ? '300px' : '240px')};
 	}
 	@media screen and (min-width: 960px) {
-		font-size: 1.2em;
+		font-size: 1em;
 		width: ${(props) => (props.text ? '300px' : '195px')};
 	}
 	@media screen and (min-width: 1280px) {

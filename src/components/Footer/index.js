@@ -48,7 +48,7 @@ const Footer = () => {
 				</LogoContainer>
 				<StyledPersonalData>
 					<StyledTextHeading>Naprawa pralek i AGD</StyledTextHeading>
-					<StyledTextName>Zenon Szalast</StyledTextName>
+					<StyledTextName>Szalast Zenon</StyledTextName>
 				</StyledPersonalData>
 			</LogoWrapper>
 			<StyledButtonsContainer>

@@ -27,7 +27,7 @@ const MobileMenu = ({ setIsOpenHandler }, ref) => {
             smooth={true}
             onClick={setIsOpenHandler}
           >
-            Strona Główna
+            Strona główna
           </StyledLink>
         </NavItem>
         <NavItem>
