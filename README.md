@@ -1,6 +1,6 @@
 # naprawa-pralek-website
 
-First company website, created as a SPA (Single Page Application). 
+Created as a SPA (Single Page Application). 
 This is a example of web business card of a local family company.
 
 Web address: 
