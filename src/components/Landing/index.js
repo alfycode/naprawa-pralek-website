@@ -26,7 +26,7 @@ import {
 } from "./LandingElements";
 const LandingPage = () => {
   return (
-    <Container vh landing bgColor name='top'>
+    <Container vh landing bgColor name="top">
       <StyledContentContainer>
         <Logo />
         <StyledTextContentContainer
@@ -46,10 +46,10 @@ const LandingPage = () => {
               <StyledClockLogo>
                 <BiTime />
               </StyledClockLogo>
-              <StyledHours>8:00 - 21:00</StyledHours>
+              <StyledHours>9:00 - 18:00</StyledHours>
             </StyledHoursContainer>
             <StyledPhoneContainer
-              href='tel:+48603663053'
+              href="tel:+48603663053"
               whileHover={{ scale: 0.97 }}
             >
               <StyledPhoneLogo>
@@ -71,7 +71,7 @@ const LandingPage = () => {
           },
         }}
       >
-        <StyledScrollIcon src={"/img/scroll_icon.svg"} alt='scroll icon' />
+        <StyledScrollIcon src={"/img/scroll_icon.svg"} alt="scroll icon" />
       </ScrollIconWrap>
       <BubbleWrap>
         <Bubble landing bgc={theme.colors.darkBlue} />
